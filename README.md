@@ -1,2 +1,2 @@
-# homepage
-Creating a portfolio homepage
+# Homepage
+Creating a portfolio homepage.
