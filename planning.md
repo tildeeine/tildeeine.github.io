@@ -7,7 +7,7 @@
 - A clear showcase of experience, skills and projects.
 - Easy means of contact.
 - Responsive webpage.
-- Learn more on project management and github workflow. See CONTRIBUTING for more.
+- Learn more on project management and github workflow. See CONTRIBUTING for more on this.
 
 ## Features:
 
@@ -21,6 +21,10 @@
 4. **Contact Page:** Contact form linked to an email. Links to LinkedIn, GitHub, and other social platforms.
 5. **Experience Page:** Page listing professional experience. Sort of like a CV page.
 6. **About me:** Page with other relevant information about me. Again, similar to this section in CV.
+7. **Feedback:** Add some way to gather insights on usability, design and content of portfolio.
+8. **Stretch goals:**
+
+-**Interactive features:** Incorporate interactive elements (theme switcher, animations, etc.)
 
 ## Design:
 
