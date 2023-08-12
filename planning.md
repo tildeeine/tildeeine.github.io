@@ -7,7 +7,7 @@
 - A clear showcase of experience, skills and projects.
 - Easy means of contact.
 - Responsive webpage.
-- Learn more on project management and github workflow. See CONTRIBUTING for more on this.
+- Learn more on project management and github workflow. See [CONTRIBUTING](./CONTRIBUTING.md) for more on this.
 
 ## Features:
 
@@ -24,19 +24,24 @@
 7. **Feedback:** Add some way to gather insights on usability, design and content of portfolio.
 8. **Stretch goals:**
 
--**Interactive features:** Incorporate interactive elements (theme switcher, animations, etc.)
+- **Interactive features:** Incorporate interactive elements (theme switcher, animations, etc.)
 
 ## Design:
 
-1. **Color Palette:** Soft colors, possibly pastel shades. Main colors: [Sample Color 1], [Sample Color 2].
-2. **Typography:** Sans-serif fonts, with [Sample Font] for headings and [Sample Font] for body text.
+1. **Color Palette:** Soft colors, modern. Nature-inspired. Main colors:
+
+   - ![#ccd5ae](https://via.placeholder.com/15/ccd5ae/000000?text=+) `#ccd5ae` Sage green
+   - ![#e9edc9](https://via.placeholder.com/15/e9edc9/000000?text=+) `#e9edc9` Light green
+   - ![#fefae0](https://via.placeholder.com/15/fefae0/000000?text=+) `#fefae0` Off-white
+
+2. **Typography:** Sans-serif fonts, with Minion Pro for headings and Proxima Nova for body text.
 3. **Layout:** Grid-based layout for portfolio, single-column design for mobile, and multi-column for desktop.
 
 ## Technologies:
 
 1. HTML/CSS/JS.
 2. Gulp for task automation.
-3. A CSS framework like Bootstrap (if necessary).
+3. A CSS framework like Tailwind (if necessary)
 
 ## Timeline:
 
@@ -44,6 +49,7 @@
 
 - Setup project structure, install necessary tools.
 - Create the basic layout of the website.
+- Get a first iteration up and running
 
 2. Week 2:
 
