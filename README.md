@@ -6,7 +6,7 @@ Creating a portfolio homepage.
 ## Resources 
 Quick links to resources that are in use for the project, for my own convenience:
  - [Google Drive folder](https://drive.google.com/drive/u/0/folders/1yipzuDuKv8jCZxPSYdeNc-OoWTzMEgQs)
- - [Figma]()
+ - [Figma](https://www.figma.com/file/43OADTTzoFp3dEl60FEsHT/Homepage?type=design&node-id=0-1&mode=design&t=dXNPbsqEkaQ7wZ3M-0)
 
 
  ## External dependencies
