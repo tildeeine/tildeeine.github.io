@@ -5,9 +5,8 @@ Creating a portfolio homepage.
 
 ## Resources 
 Quick links to resources that are in use for the project, for my own convenience:
- - (Google Drive folder)[https://drive.google.com/drive/u/0/folders/1yipzuDuKv8jCZxPSYdeNc-OoWTzMEgQs]
- - (Jira)[]
- - (Figma)[]
+ - [Google Drive folder](https://drive.google.com/drive/u/0/folders/1yipzuDuKv8jCZxPSYdeNc-OoWTzMEgQs)
+ - [Figma]()
 
 
  ## External dependencies
