@@ -7,6 +7,7 @@
 - A clear showcase of experience, skills and projects.
 - Easy means of contact.
 - Responsive webpage.
+- Learn more on project management and github workflow. See CONTRIBUTING for more.
 
 ## Features:
 
@@ -18,7 +19,8 @@
 
 3. **Skills Page:** List or icons showcasing skills (e.g., JavaScript, React, Python).
 4. **Contact Page:** Contact form linked to an email. Links to LinkedIn, GitHub, and other social platforms.
-5. **Blog (Stretch Goal):** A section or page dedicated to tech-related blogs.
+5. **Experience Page:** Page listing professional experience. Sort of like a CV page.
+6. **About me:** Page with other relevant information about me. Again, similar to this section in CV.
 
 ## Design:
 
