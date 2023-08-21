@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:remark": "npx remark ./ --use remark-preset-lint-consistent --use remark-preset-lint-recommended",
     "format": "remark . --quiet --frail --output"
   },
   "remarkConfig": {

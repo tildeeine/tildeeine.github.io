@@ -18,6 +18,10 @@ Running linter locally:
 
     npm run lint:remark
 
+Running formatting script locally:
+
+    npm run format
+
 ## External dependencies
 
 ### Libraries

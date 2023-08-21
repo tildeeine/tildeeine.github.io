@@ -1,0 +1,37 @@
+# Guidelines
+
+This file will describe
+points I want to work on regarding workflow and structure. This will serve as a
+guideline for my development process.
+
+This is definitely over-organizing for my project size, but since the motivation
+for the project is to learn more about development workflow and github as well as
+just learning to set up a webpage, i want to put effort into looking for current
+industry best practices and learn to follow a few of them.
+
+## GitHub
+
+- **'.gitignore':** Use '.gitignore' to exclude files/directories that shouldn't
+  be committed.
+- **README:** Keep an updated top-level README for project introduction, setup
+  instructions, and other essential details.
+- **Atomic commits:** Each commit should represent a single logical change.
+- **PRs:** PRs should be concise and tied to a specific task or feature.
+- **Templates:** Use templates for PRs and issues.
+
+## Project workflow
+
+- **Iterative development:** Start with a minimal viable product, and then add
+  features and improvements in iterations.
+- **Planning:** Define features, design, and end goals.
+- **Feedback:** Get regular feedback, from peers or automated tools.
+- **Document:** Document as you go, either in comments or in separate docs
+- **Testing:** Regularly test the applicaton in different environments.
+
+## Frontend development
+
+- **Mobile-first approach:** Designing for mobile before designing for desktop
+  or other devices.
+- **Image optimization:** Use image compression tools to reduce image file sizes
+  without sacrificing much quality.
+- **Directory structure:** Separate assets in directories
