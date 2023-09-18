@@ -4,25 +4,31 @@ Creating a portfolio homepage.
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/7da6a9fc1d724462b9e6eb1e96099c1c)](https://app.codacy.com/gh/tildeeine/homepage/dashboard?utm_source=gh\&utm_medium=referral\&utm_content=\&utm_campaign=Badge_grade)
 
-## Resources
-
-Quick links to resources that are in use for the project, for my own
-convenience:
-
-*   [Google Drive folder](https://drive.google.com/drive/u/0/folders/1yipzuDuKv8jCZxPSYdeNc-OoWTzMEgQs)
-*   [Figma](https://www.figma.com/file/43OADTTzoFp3dEl60FEsHT/Homepage?type=design\&node-id=0-1\&mode=design\&t=dXNPbsqEkaQ7wZ3M-0)
 
 ## Running
 
-Running linter locally:
+First, run the development server:
 
-    npm run lint:remark
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-Running formatting script locally:
-
-    npm run format
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## External dependencies
+- Next.js
+
+### Next.js
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ### Libraries
 
