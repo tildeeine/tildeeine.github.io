@@ -2,8 +2,8 @@ import React from "react";
 
 const ContactSection: React.FC = () => {
     return (
-        <section>
-            <div id="contact">
+        <section id="contact-section">
+            <div>
                 <p className="text-xl font-bold inline">
                     Contact me
                 </p>
