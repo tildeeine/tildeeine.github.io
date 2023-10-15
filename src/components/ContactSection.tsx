@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactSection: React.FC = () => {
     return (
-        <section id="contact-section">
+        <section id="contact">
             <div>
                 <p className="text-xl font-bold inline">
                     Contact me

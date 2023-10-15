@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection: React.FC = () => {
     return (
-        <section id='about-section'>
+        <section id='about-me'>
             <div>
                 <p>About Me</p>
             </div>

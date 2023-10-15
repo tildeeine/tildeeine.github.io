@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectSection: React.FC = () => {
     return (
-        <section id='project-section'>
+        <section id='project'>
             <div>
                 <p>Projects</p>
             </div>

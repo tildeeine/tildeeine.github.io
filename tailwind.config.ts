@@ -9,12 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'fontA': ['FontA', 'system-ui'],
-        'fontB': ['FontB', 'system-ui'],
+        poppins: ['Poppins', 'sans-serif'],
+        Lora: ['Lora', 'serif'],
       },
       colors: {
-        primary: '#FF5733',
-        secondary: '#3333FF',
+        darkorange: '#F55200',
+        lightorange: '#FB8D22',
+        background: '#F5E1D0',
+        green: '#004921',
       },
     },
   },
