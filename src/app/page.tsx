@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
-import HomeSection from '../components/HomeSecton';
+import HomeSection from '../components/HomeSection';
 import ProjectSection from '../components/ProjectSection';
 import AboutSection from '../components/AboutSection';
 import ExperienceSection from '../components/ExperienceSection';
