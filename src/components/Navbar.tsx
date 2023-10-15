@@ -3,7 +3,7 @@ import React from "react";
 const Navbar: React.FC = () => {
     return (
         <nav className="p-8 fixed top-0 max-w-screen-xl md:text-lg z-50 font-Lora text-green">
-            <div className="container mx-auto border-b border-lightorange inline-block pb-4">
+            <div className="container mx-auto inline-block pb-4">
                 <ul className="flex justify-between">
                     {['Home', 'Projects', 'About me', 'Experience', 'Background', 'Contact'].map((item) => (
                         <li key={item} className="mr-6">
