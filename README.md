@@ -5,6 +5,7 @@ Creating a portfolio homepage.
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/7da6a9fc1d724462b9e6eb1e96099c1c)](https://app.codacy.com/gh/tildeeine/homepage/dashboard?utm_source=gh\&utm_medium=referral\&utm_content=\&utm_campaign=Badge_grade)
 
 
+
 ## Running
 
 First, run the development server:
@@ -41,3 +42,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
     *   [Remark-lint]()
 *   [Snyk](https://app.snyk.io/org/tildeeine/flow/import?message=connected) to
     help detect vulnerabilities in my code and its dependencies.
+
+### Resources
+- [Figma mockup](https://www.figma.com/file/x0fQp4KdvCRqpFDZuIaA65/aesthetic-portfolio-website-(Community)?type=design&node-id=0%3A1&mode=design&t=EKzy1Xl2DaLmq6WD-1)
