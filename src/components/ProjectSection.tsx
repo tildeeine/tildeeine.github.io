@@ -1,14 +1,14 @@
 import React from "react";
 
-const PortfolioSection: React.FC = () => {
+const ProjectSection: React.FC = () => {
     return (
-        <section id='portfolio-section'>
+        <section id='project'>
             <div>
-                <p>Portfolio</p>
+                <p>Projects</p>
             </div>
             {/* Your projects and their descriptions go here */}
         </section>
     );
 }
 
-export default PortfolioSection;
+export default ProjectSection;

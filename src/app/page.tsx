@@ -1,21 +1,24 @@
-import Image from 'next/image'
 import Navbar from '../components/Navbar'
-import LandingSection from '../components/LandingSection';
+import HomeSection from '../components/HomeSection';
+import ProjectSection from '../components/ProjectSection';
 import AboutSection from '../components/AboutSection';
-import PortfolioSection from '../components/PortfolioSection';
+import ExperienceSection from '../components/ExperienceSection';
+import BackgroundSection from '../components/BackgroundSection';
 import ContactSection from '../components/ContactSection';
 
-const Home: React.FC = () => {
+const Page: React.FC = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-background">
       <Navbar />
-      <LandingSection />
+      <HomeSection />
+      <ProjectSection />
       <AboutSection />
-      <PortfolioSection />
+      <ExperienceSection />
+      <BackgroundSection />
       <ContactSection />
     </main>
   );
 }
 
 
-export default Home;
+export default Page;
