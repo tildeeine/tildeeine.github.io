@@ -10,7 +10,7 @@ const HomeSection: React.FC = () => {
                     <div className="flex-1">
                         <h1 className="text-2xl md:text-4xl font-semibold mb-4 text-darkorange border-b border-lightorange">Tilde Eriksen Eine, <br /> Software and Development</h1>
                         <p className="text-sm md:text-base mb-8 text-green font-Lora" style={{ maxHeight: "YOUR_IMAGE_HEIGHT" }}>
-                            Hi, I’m Tilde! I'm currently in my fourth year at NTNU, doing a master's degree in Communication Technology and Digital Security.I like to do a bit of both development and cybersecurity, and am looking to go into a career in cybersecurity.
+                            Hi, I’m Tilde! I'm currently in my fourth year at NTNU, doing a master's degree in Communication Technology and Digital Security.  I like to do a bit of both development and cybersecurity, and am looking to go into a career in cybersecurity.
                         </p>
                     </div>
                 </div>
