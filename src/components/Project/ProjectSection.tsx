@@ -11,12 +11,17 @@ const projects = [
 const ProjectSection: React.FC = () => {
     return (
         <section id='project'>
-            <div className="flex flex-wrap justify-center mt-9 w-4/5 mx-auto">
+            <div className="mt-30 py-10 w-4/5 mx-auto">
+                <h1 className="text-4xl font-poppins text-darkorange text-left">
+                    Projects
+                </h1>
+            </div>
+            <div className="flex flex-wrap justify-right w-4/5 mx-auto">
                 <div >
-                    <button className="bg-background border border-darkorange hover:bg-darkorange hover:text-background text-darkorange font-bold py-2 px-4 rounded-l">
+                    <button className="bg-background border border-darkorange hover:bg-darkorange hover:text-background text-darkorange font-bold py-2 px-4 rounded-l-lg">
                         Tech Projects
                     </button>
-                    <button className="bg-background border border-darkorange hover:bg-darkorange hover:text-background text-darkorange font-bold py-2 px-4 rounded-r">
+                    <button className="bg-background border border-darkorange hover:bg-darkorange hover:text-background text-darkorange font-bold py-2 px-4 rounded-r-lg">
                         Life Projects
                     </button>
                 </div>
