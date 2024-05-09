@@ -7,25 +7,25 @@ const HomeSection: React.FC = () => {
         <div>
             <div className="flex items-start font-poppins justify-between mt-5 p-8 w-4/5 mx-auto">
                 <div className="flex-1">
-                    <h1 className="text-3xl md:text-7xl mt-8 mb-4 text-darkorange">Hello, I'm Tilde! </h1>
+                    <h1 className="text-3xl md:text-7xl mt-8 mb-4 text-darkorange">Hello, I&apos;m Tilde! </h1>
                     <p className="text-sm md:text-base mb-8 text-darkblue">
-                        I'm a <b>cybersecurity</b> student interested in <b>pentesting</b> and <b>software development</b>t, currently in my fifth and last year of a M.Sc in Cybersecurity and Data Communication at NTNU.
+                        I&apos;m a <b>cybersecurity</b> student interested in <b>pentesting</b> and <b>software development</b>t, currently in my fifth and last year of a M.Sc in Cybersecurity and Data Communication at NTNU.
                     </p>
                     <div className="flex flex-wrap justify-center">
-                        <button class="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded mr-4">
+                        <button className="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded mr-4">
                             GitHub
                         </button>
-                        <button class="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded mr-4">
+                        <button className="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded mr-4">
                             Resume
                         </button>
-                        <button class="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded">
+                        <button className="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded">
                             LinkedIn
                         </button>
                     </div>
 
                 </div>
 
-                <Image src={profileImage} alt="Tilde Eriksen Eine" className="w-1/4 m-2 rounded-full" />
+                <Image src={profileImage} alt="Tilde Eriksen Eine" className="w-1/4 rounded-full" />
             </div>
         </div>
     );
