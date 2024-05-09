@@ -9,14 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-        Lora: ['Lora', 'serif'],
+        'poppins': ['Poppins']
       },
       colors: {
-        darkorange: '#F55200',
-        lightorange: '#FB8D22',
-        background: '#F5E1D0',
-        green: '#004921',
+        'darkorange': '#F55200',
+        'darkblue': '#1F526B',
+        'background': '#FAF1E6'
       },
     },
   },
