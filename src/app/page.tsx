@@ -2,8 +2,6 @@ import Navbar from '../components/Navbar'
 import HomeSection from '../components/HomeSection';
 import ProjectSection from '../components/ProjectSection';
 import AboutSection from '../components/AboutSection';
-import ExperienceSection from '../components/ExperienceSection';
-import BackgroundSection from '../components/BackgroundSection';
 import ContactSection from '../components/ContactSection';
 
 const Page: React.FC = () => {
@@ -11,11 +9,9 @@ const Page: React.FC = () => {
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-background">
       <Navbar />
       <HomeSection />
-      <ProjectSection />
+      {/* <ProjectSection />
       <AboutSection />
-      <ExperienceSection />
-      <BackgroundSection />
-      <ContactSection />
+      <ContactSection /> */}
     </main>
   );
 }
