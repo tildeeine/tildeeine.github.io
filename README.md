@@ -44,4 +44,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
     help detect vulnerabilities in my code and its dependencies.
 
 ### Resources
-- [Figma mockup](https://www.figma.com/file/x0fQp4KdvCRqpFDZuIaA65/aesthetic-portfolio-website-(Community)?type=design&node-id=0%3A1&mode=design&t=EKzy1Xl2DaLmq6WD-1)
+- [Figma mockup](https://www.figma.com/design/t6SObrgAZtojQg0ebxfCeK/aesthetic-portfolio-website-(Community)?node-id=0%3A1&t=ZafStEhefyvT37SM-1)
