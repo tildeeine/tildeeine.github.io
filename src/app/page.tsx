@@ -9,9 +9,9 @@ const Page: React.FC = () => {
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-background">
       <Navbar />
       <HomeSection />
-      <ProjectSection />{/* 
+      <ProjectSection />
       <AboutSection />
-      <ContactSection /> */}
+      <ContactSection />
     </main>
   );
 }
