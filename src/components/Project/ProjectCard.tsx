@@ -3,22 +3,23 @@ import Image from 'next/image';
 import blockChainImage from '../../assets/img/frontphoto.png';
 
 interface ProjectCardProps {
+    key: number;
     imageUrl: string;
     title: string;
     description: string;
     readMoreUrl: string;
-    imageAlignment: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ imageUrl, title, description, readMoreUrl, imageAlignment }) => {
-    const isImageLeft = imageAlignment.localeCompare('left');
+const ProjectCard: React.FC<ProjectCardProps> = ({ key, imageUrl, title, description, readMoreUrl }) => {
+    const isImageLeft = key == 1;
+
     return (
         <div className={`flex ${isImageLeft ? 'flex-row' : 'flex-row-reverse'} w-3/5 mt-10`}>
             <div className="flex rounded-lg overflow-hidden hover:shadow-lg mt-10">
                 <div className="flex-none w-48 relative">
                     <Image
                         src={blockChainImage}
-                        alt="Illustration of project"
+                        alt={title}
                         layout="fill"
                         objectFit="cover"
                         className={`rounded-${isImageLeft ? 'l' : 'r'}-lg`}
