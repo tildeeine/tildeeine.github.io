@@ -11,7 +11,7 @@ const projects = [
 const ProjectSection: React.FC = () => {
     return (
         <section id='project'>
-            <div className="flex flex-wrap justify-center mt-9">
+            <div className="flex flex-wrap justify-center mt-9 w-4/5 mx-auto">
                 <div >
                     <button className="bg-background border border-darkorange hover:bg-darkorange hover:text-background text-darkorange font-bold py-2 px-4 rounded-l">
                         Tech Projects
