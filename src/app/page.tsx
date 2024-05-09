@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar'
 import HomeSection from '../components/HomeSection';
-import ProjectSection from '../components/ProjectSection';
+import ProjectSection from '../components/Project/ProjectSection';
 import AboutSection from '../components/AboutSection';
 import ContactSection from '../components/ContactSection';
 
@@ -9,7 +9,7 @@ const Page: React.FC = () => {
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-background">
       <Navbar />
       <HomeSection />
-      {/* <ProjectSection />
+      <ProjectSection />{/* 
       <AboutSection />
       <ContactSection /> */}
     </main>
