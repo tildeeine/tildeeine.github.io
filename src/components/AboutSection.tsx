@@ -5,7 +5,7 @@ import profileImage from '../assets/img/whoami.jpg';
 const AboutSection: React.FC = () => {
     return (
         <section id='about-me'>
-            <div className="flex justify-center mt-20 text-4xl font-poppins font-semibold text-darkorange">
+            <div className="flex justify-center mt-40 text-4xl font-poppins font-semibold text-darkorange">
                 <h2>Who am I?</h2>
             </div>
             <div className="flex justify-center">

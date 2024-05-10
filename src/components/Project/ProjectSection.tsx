@@ -10,8 +10,8 @@ const projects = [
 
 const ProjectSection: React.FC = () => {
     return (
-        <section id='project'>
-            <div className="mt-30 py-10 w-4/5 mx-auto">
+        <section id='projects'>
+            <div className="mt-20 py-10 w-4/5 mx-auto">
                 <h1 className="text-4xl font-poppins text-darkorange text-left">
                     Projects
                 </h1>
