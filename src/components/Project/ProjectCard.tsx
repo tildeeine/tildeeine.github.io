@@ -1,30 +1,31 @@
 import React from 'react';
-import Image from 'next/image';
-import blockChainImage from '../../assets/img/frontphoto.png';
+import Image, { StaticImageData } from 'next/image';
 
 interface ProjectCardProps {
-    key: number;
-    imageUrl: string;
+    id: number; // Use id instead of key
+    image: StaticImageData;
     title: string;
     description: string;
     readMoreUrl: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ key, imageUrl, title, description, readMoreUrl }) => {
-    const isImageLeft = key == 1;
+const ProjectCard: React.FC<ProjectCardProps> = ({ id, image, title, description, readMoreUrl }) => {
+    const isImageLeft = id % 2 !== 0; // Image on left for odd ids
 
     return (
         <div className={`flex ${isImageLeft ? 'flex-row' : 'flex-row-reverse'} w-4/5 mx-auto mt-10`}>
             <div className="flex rounded-lg overflow-hidden hover:shadow-lg mt-10">
-                <div className="flex-none w-48 relative">
-                    <Image
-                        src={blockChainImage}
-                        alt={title}
-                        layout="fill"
-                        objectFit="cover"
-                        className={`rounded-${isImageLeft ? 'l' : 'r'}-lg`}
-                    />
-                </div>
+                {isImageLeft && (
+                    <div className="flex-none w-48 relative">
+                        <Image
+                            src={image}
+                            alt={title}
+                            layout="fill"
+                            objectFit="cover"
+                            className={'rounded-l-lg'}
+                        />
+                    </div>
+                )}
                 <div className="flex-1 p-4">
                     <h2 className="text-lg text-darkblue font-semibold">{title}</h2>
                     <p className="text-darkblue">{description}</p>
@@ -32,6 +33,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ key, imageUrl, title, descrip
                         more details
                     </a>
                 </div>
+                {!isImageLeft && (
+                    <div className="flex-none w-48 relative">
+                        <Image
+                            src={image}
+                            alt={title}
+                            layout="fill"
+                            objectFit="cover"
+                            className={'rounded-r-lg'}
+                        />
+                    </div>
+                )}
             </div>
         </div>
     );

@@ -1,11 +1,13 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import homepageImage from '../assets/img/frontphoto.png';
+import blockChainImage from '../../assets/img/block.jpg';
+import ambintImage from '../../assets/img/ambient.jpg';
+import homeImage from '../../assets/img/home.jpg';
 
 const projects = [
-    { id: 1, title: "Secure Blockchain Implementation", description: "implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java", imageUrl: "/path/to/image1.png", readMoreUrl: "/project1", imageAlignment: 'left' },
-    { id: 2, title: "Ambient Home Security System", description: "implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java", imageUrl: "/path/to/image2.png", readMoreUrl: "/project2", imageAlignment: 'right' },
-    { id: 3, title: "Homepage", description: "implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java", imageUrl: "/path/to/image2.png", readMoreUrl: "/project2", imageAlignment: 'left' },
+    { id: 1, title: "Secure Blockchain Implementation", description: "implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java", image: blockChainImage, readMoreUrl: "/project1", imageAlignment: 'left' },
+    { id: 2, title: "Ambient Home Security System", description: "implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java", image: ambintImage, readMoreUrl: "/project2", imageAlignment: 'right' },
+    { id: 3, title: "Homepage", description: "implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java", image: homeImage, readMoreUrl: "/project2", imageAlignment: 'left' },
 ];
 
 const ProjectSection: React.FC = () => {
@@ -30,9 +32,10 @@ const ProjectSection: React.FC = () => {
                 {projects.map((project, index) => (
                     <ProjectCard
                         key={project.id}
+                        id={project.id}
+                        image={project.image}
                         title={project.title}
                         description={project.description}
-                        imageUrl={project.imageUrl}
                         readMoreUrl={project.readMoreUrl}
                     />
                 ))}
