@@ -6,10 +6,10 @@ interface ProjectCardProps {
     image: StaticImageData;
     title: string;
     description: string;
-    readMoreUrl: string;
+    onReadMore: () => void;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ id, image, title, description, readMoreUrl }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ id, image, title, description, onReadMore }) => {
     const isImageLeft = id % 2 !== 0; // Image on left for odd ids
 
     return (
@@ -29,9 +29,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, image, title, description
                 <div className="flex-1 p-4">
                     <h2 className="text-lg text-darkblue font-semibold">{title}</h2>
                     <p className="text-darkblue">{description}</p>
-                    <a href={readMoreUrl} className="inline-block mt-4 px-1 py-1 border border-darkorange text-darkorange rounded hover:bg-darkorange hover:text-background transition-all">
+                    <button onClick={onReadMore} className="inline-block mt-4 px-1 py-1 border border-darkorange text-darkorange rounded hover:bg-darkorange hover:text-background transition-all">
                         more details
-                    </a>
+                    </button>
                 </div>
                 {!isImageLeft && (
                     <div className="flex-none w-48 relative">
