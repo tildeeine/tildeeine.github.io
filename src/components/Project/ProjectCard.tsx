@@ -14,7 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, image, title, description
 
     return (
         <div className={`flex ${isImageLeft ? 'flex-row' : 'flex-row-reverse'} w-4/5 mx-auto mt-10`} onClick={onReadMore}>
-            <div className="flex rounded-lg overflow-hidden hover:shadow-lg mt-10">
+            <div className="flex rounded-lg overflow-hidden mt-10">
                 {isImageLeft && (
                     <div className="flex-none w-48 relative">
                         <Image

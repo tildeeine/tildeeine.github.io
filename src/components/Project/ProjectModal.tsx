@@ -1,5 +1,6 @@
 // ProjectModal.tsx
 import React from 'react';
+import Image, { StaticImageData } from 'next/image';
 
 interface ProjectModalProps {
     project: {
@@ -8,7 +9,7 @@ interface ProjectModalProps {
         languages: string[];
         task: string;
         solution: string;
-        images: string[]; // Array of image URLs
+        images: StaticImageData[]; // Array of image URLs
     };
     isOpen: boolean;
     onClose: () => void;
@@ -31,30 +32,40 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
     };
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center " onClick={handleBackdropClick}>
-            <div className="bg-background p-5 rounded-lg w-3/4 font-poppins" onClick={handleModalContentClick}>
-                <div className="w-7/10 pr-40">
-                    <h2 className="text-darkblue font-bold font-poppins text-xl">{project.title}</h2>
-                    <div className=" text-darkorange mb-4">
-                        <ul>{project.languages.map(lang => <li key={lang}>{lang}</li>)}</ul>
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center" onClick={handleBackdropClick}>
+            <div className="bg-background p-5 rounded-lg w-3/4 font-poppins flex" onClick={handleModalContentClick}>
+                <div className="w-7/10 p-4 space-y-4">
+                    <h2 className="text-3xl font-bold text-darkblue">{project.title}</h2>
+                    <div className="text-darkorange mb-4">
+                        <ul className="flex flex-wrap">
+                            {project.languages.map(lang => <li key={lang} className="bg-mediumbeige rounded-full px-3 py-1 text-sm mr-2">{lang}</li>)}
+                        </ul>
                     </div>
-                    <div className=" text-darkblue mb-4">
-                        <p>{project.description}</p>
-                    </div>
-                    <div className="flex text-darkblue">
-                        <h3>Task</h3>
+                    <p className="text-darkblue">{project.description}</p>
+                    <div className="text-darkblue">
+                        <h3 className="text-lg font-semibold">Task</h3>
                         <p>{project.task}</p>
-                        <h3>Solution:</h3>
+                    </div>
+                    <div className="text-darkblue">
+                        <h3 className="text-lg font-semibold">Solution</h3>
                         <p>{project.solution}</p>
                     </div>
                 </div>
-                <div className="w-3/10 flex justify-right">
+                <div className="w-3/10 flex flex-col items-end pr-5">
                     {project.images.map((img, index) => (
-                        <img key={index} src={img} alt={`Screenshot ${index + 1}`} className="mb-2" />
+                        <div key={index} className="relative w-full mb-4" > {/* Set height to control image size */}
+                            <Image
+                                src={img}
+                                alt={`Screenshot ${index + 1}`}
+                                layout="fill"
+                                objectFit="cover" // Ensure the image covers the area without distortion
+                                className="rounded-lg"
+                            />
+                        </div>
                     ))}
                 </div>
             </div>
-        </div >
+        </div>
     );
 };
 

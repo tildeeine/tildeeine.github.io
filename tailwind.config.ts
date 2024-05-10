@@ -14,7 +14,8 @@ const config: Config = {
       colors: {
         'darkorange': '#F55200',
         'darkblue': '#1F526B',
-        'background': '#FAF1E6'
+        'background': '#FAF1E6',
+        'mediumbeige': '#F5E6CA'
       },
     },
   },

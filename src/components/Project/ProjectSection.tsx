@@ -8,6 +8,9 @@ import blockChainImage from '../../assets/img/block.jpg';
 import ambintImage from '../../assets/img/ambient.jpg';
 import homeImage from '../../assets/img/home.jpg';
 
+import blockchainImage1 from '../../assets/img/blockchain1.jpg';
+import blockchainImage2 from '../../assets/img/blockchain2.jpg';
+
 const projects = [
     {
         id: 1,
@@ -17,7 +20,7 @@ const projects = [
         languages: ['HTML', 'CSS', 'JavaScript'],
         task: 'Task description here',
         solution: 'Solution description here',
-        images: ['url1', 'url2']
+        images: [homeImage, homeImage]
     },
     {
         id: 2,
