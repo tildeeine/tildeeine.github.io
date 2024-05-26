@@ -39,7 +39,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                 <div className="p-4 space-y-4 w-full md:w-2/3">
                     <div className="flex justify-between items-start">
                         <h2 className="text-3xl font-bold text-darkblue flex-grow">{project.title}</h2>
-                        <div className="text-darkblue rounded-full text-sm ml-4 flex-shrink-0 mt-1">
+                        <div className="text-darkblue rounded-full text-md ml-4 flex-shrink-0 mt-1">
                             <p>{project.time}</p>
                         </div>
                     </div>
