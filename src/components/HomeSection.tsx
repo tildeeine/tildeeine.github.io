@@ -25,7 +25,7 @@ const HomeSection: React.FC = () => {
 
                 </div>
 
-                <Image src={profileImage} alt="Tilde Eriksen Eine" className="w-1/4 rounded-full" />
+                <Image src={profileImage} alt="Tilde Eriksen Eine" className="w-1/4 rounded-full mt-12" />
             </div>
         </section>
     );

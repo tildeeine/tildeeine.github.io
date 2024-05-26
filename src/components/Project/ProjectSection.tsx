@@ -63,10 +63,10 @@ const ProjectSection: React.FC = () => {
             <div className="flex flex-wrap justify-right w-4/5 mx-auto">
                 <div >
                     <button className="bg-background border border-darkorange hover:bg-darkorange hover:text-background text-darkorange font-bold py-2 px-4 rounded-l-lg">
-                        Tech Projects
+                        Technical
                     </button>
                     <button className="bg-background border border-darkorange hover:bg-darkorange hover:text-background text-darkorange font-bold py-2 px-4 rounded-r-lg">
-                        Life Projects
+                        Personal
                     </button>
                 </div>
             </div>
