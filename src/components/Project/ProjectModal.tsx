@@ -35,12 +35,14 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center" onClick={handleBackdropClick}>
-            <div className="bg-background p-5 rounded-lg w-3/4 font-poppins flex" onClick={handleModalContentClick}>
-                <div className="p-4 space-y-4 w-2/3">
-                    <div className="text-darkblue rounded-full text-sm text-right">
-                        <p>{project.time}</p>
+            <div className="bg-background p-5 rounded-lg w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 font-poppins flex flex-col md:flex-row overflow-hidden" onClick={handleModalContentClick}>
+                <div className="p-4 space-y-4 w-full md:w-2/3">
+                    <div className="flex justify-between items-start">
+                        <h2 className="text-3xl font-bold text-darkblue flex-grow">{project.title}</h2>
+                        <div className="text-darkblue rounded-full text-md ml-4 flex-shrink-0">
+                            <p>{project.time}</p>
+                        </div>
                     </div>
-                    <h2 className="text-3xl font-bold text-darkblue">{project.title}</h2>
                     <div className="text-darkorange mb-4 flex items-center">
                         <ul className="flex flex-wrap">
                             {project.languages.map(lang => (
@@ -53,7 +55,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                             <a href="https://github.com/users/tildeeine/projects/1/views/5?pane=issue&itemId=62438984">GitHub</a>
                         </div>
                     </div>
-
                     <p className="text-darkblue">{project.description}</p>
                     <hr className="my-4 border-darkblue" />
                     <div className="text-darkblue">
@@ -66,14 +67,19 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                     </div>
                 </div>
 
-                {/* Display images in a separate div. Current images are placeholders*/}
-                <div className="flex flex-col w-1/4 items-center justify-center">
-                    <div className="p-1"><Image src={profileImage} alt="Tilde Eriksen Eine" /></div>
-
-                    <div className="p-1"><Image src={profileImage} alt="Tilde Eriksen Eine" /></div>
+                {/* Display images in a separate div. Current images are placeholders */}
+                <div className="flex flex-col w-full md:w-1/3 items-center justify-center">
+                    <div className="p-1 flex justify-center">
+                        <Image src={profileImage} alt="Tilde Eriksen Eine" className="object-contain max-w-full h-auto rounded" />
+                    </div>
+                    <div className="p-1 flex justify-center">
+                        <Image src={profileImage} alt="Tilde Eriksen Eine" className="object-contain max-w-full h-auto rounded" />
+                    </div>
                 </div>
             </div>
         </div>
+
+
     );
 };
 
