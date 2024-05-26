@@ -35,11 +35,11 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center" onClick={handleBackdropClick}>
-            <div className="bg-background p-5 rounded-lg w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 font-poppins flex flex-col md:flex-row overflow-hidden" onClick={handleModalContentClick}>
+            <div className="bg-background p-5 rounded-lg w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 h-5/6 max-h-screen font-poppins flex flex-col md:flex-row overflow-hidden" onClick={handleModalContentClick}>
                 <div className="p-4 space-y-4 w-full md:w-2/3">
                     <div className="flex justify-between items-start">
                         <h2 className="text-3xl font-bold text-darkblue flex-grow">{project.title}</h2>
-                        <div className="text-darkblue rounded-full text-md ml-4 flex-shrink-0">
+                        <div className="text-darkblue rounded-full text-sm ml-4 flex-shrink-0 mt-1">
                             <p>{project.time}</p>
                         </div>
                     </div>
@@ -68,12 +68,15 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                 </div>
 
                 {/* Display images in a separate div. Current images are placeholders */}
-                <div className="flex flex-col w-full md:w-1/3 items-center justify-center">
-                    <div className="p-1 flex justify-center">
-                        <Image src={profileImage} alt="Tilde Eriksen Eine" className="object-contain max-w-full h-auto rounded" />
+                <div className="flex flex-col w-full md:w-1/3 items-center justify-between">
+                    <div className="p-1 flex justify-center w-full h-1/3">
+                        <Image src={profileImage} alt="Tilde Eriksen Eine" className="object-cover w-48 h-32 rounded-lg" />
                     </div>
-                    <div className="p-1 flex justify-center">
-                        <Image src={profileImage} alt="Tilde Eriksen Eine" className="object-contain max-w-full h-auto rounded" />
+                    <div className="p-1 flex justify-center w-full h-1/3">
+                        <Image src={profileImage} alt="Tilde Eriksen Eine" className="object-cover w-48 h-32 rounded-lg" />
+                    </div>
+                    <div className="p-1 flex justify-center w-full h-1/3">
+                        <Image src={profileImage} alt="Tilde Eriksen Eine" className="object-cover w-48 h-32 rounded-lg" />
                     </div>
                 </div>
             </div>
