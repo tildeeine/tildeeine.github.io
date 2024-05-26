@@ -1,21 +1,19 @@
 import Navbar from '../components/Navbar'
 import HomeSection from '../components/HomeSection';
-import ProjectSection from '../components/ProjectSection';
+import ProjectSection from '../components/Project/ProjectSection';
 import AboutSection from '../components/AboutSection';
-import ExperienceSection from '../components/ExperienceSection';
-import BackgroundSection from '../components/BackgroundSection';
 import ContactSection from '../components/ContactSection';
+import Footer from '@/components/Footer';
 
 const Page: React.FC = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-background">
+    <main className="flex min-h-screen flex-col p-24 bg-background">
       <Navbar />
       <HomeSection />
       <ProjectSection />
       <AboutSection />
-      <ExperienceSection />
-      <BackgroundSection />
       <ContactSection />
+      <Footer />
     </main>
   );
 }
