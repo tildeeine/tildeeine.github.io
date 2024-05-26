@@ -20,6 +20,7 @@ const projects = [
         languages: ['HTML', 'CSS', 'JavaScript'],
         task: 'Task description here',
         solution: 'Solution description here',
+        time: 'Fall 2021',
         images: [homeImage, homeImage]
     },
     {
@@ -30,7 +31,8 @@ const projects = [
         languages: ['HTML', 'CSS', 'JavaScript'],
         task: 'Task description here',
         solution: 'Solution description here',
-        images: ['url1', 'url2']
+        images: ['url1', 'url2'],
+        time: 'Fall 2021'
     },
     {
         id: 3,
@@ -40,7 +42,8 @@ const projects = [
         languages: ['HTML', 'CSS', 'JavaScript'],
         task: 'Task description here',
         solution: 'Solution description here',
-        images: ['url1', 'url2']
+        images: ['url1', 'url2'],
+        time: 'Fall 2021'
     },
 ];
 
