@@ -41,14 +41,19 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                         <p>{project.time}</p>
                     </div>
                     <h2 className="text-3xl font-bold text-darkblue">{project.title}</h2>
-                    <div className="text-darkorange mb-4 flex flex-wrap ">
+                    <div className="text-darkorange mb-4 flex items-center">
                         <ul className="flex flex-wrap">
-                            {project.languages.map(lang => <li key={lang} className="bg-mediumbeige rounded-full px-3 py-1 text-sm mr-2">{lang}</li>)}
+                            {project.languages.map(lang => (
+                                <li key={lang} className="bg-mediumbeige rounded-full px-3 py-1 text-sm mr-2 mb-2">
+                                    {lang}
+                                </li>
+                            ))}
                         </ul>
-                        <div className="flex text-background bg-darkorange rounded text-sm text-right px-3 py-1">
+                        <div className="ml-auto text-background bg-darkorange rounded-full text-sm px-3 py-1">
                             <a href="https://github.com/users/tildeeine/projects/1/views/5?pane=issue&itemId=62438984">GitHub</a>
                         </div>
                     </div>
+
                     <p className="text-darkblue">{project.description}</p>
                     <hr className="my-4 border-darkblue" />
                     <div className="text-darkblue">
@@ -61,7 +66,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                     </div>
                 </div>
 
-                {/* Display images in a separate div. Currently not working*/}
+                {/* Display images in a separate div. Current images are placeholders*/}
                 <div className="flex flex-col w-1/4 items-center justify-center">
                     <div className="p-1"><Image src={profileImage} alt="Tilde Eriksen Eine" /></div>
 
