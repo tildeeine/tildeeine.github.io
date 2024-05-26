@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "title": "Secure Blockchain Implementation",
+        "description": "Implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java",
+        "image": "block.jpg",
+        "languages": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "task": "Task description here",
+        "solution": "Solution description here",
+        "time": "Fall 2021",
+        "images": [
+            "blockchain1.jpg",
+            "blockchain2.jpg",
+            "blockchain2.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Ambient Home Security System",
+        "description": "Implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java",
+        "image": "ambient.jpg",
+        "languages": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "task": "Task description here",
+        "solution": "Solution description here",
+        "time": "Fall 2021",
+        "images": [
+            "blockchain1.jpg",
+            "blockchain1.jpg",
+            "blockchain1.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Homepage",
+        "description": "Implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java",
+        "image": "home.jpg",
+        "languages": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "task": "Task description here",
+        "solution": "Solution description here",
+        "time": "Fall 2021",
+        "images": [
+            "blockchain1.jpg",
+            "blockchain1.jpg",
+            "blockchain1.jpg"
+        ]
+    }
+]

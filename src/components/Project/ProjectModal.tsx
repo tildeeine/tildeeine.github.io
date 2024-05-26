@@ -67,17 +67,13 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                     </div>
                 </div>
 
-                {/* Display images in a separate div. Current images are placeholders */}
+                {/* Project images */}
                 <div className="flex flex-col w-full md:w-1/3 items-center justify-between">
-                    <div className="p-1 flex justify-center w-full h-1/3">
-                        <Image src={profileImage} alt="Tilde Eriksen Eine" className="object-cover w-48 h-32 rounded-lg" />
-                    </div>
-                    <div className="p-1 flex justify-center w-full h-1/3">
-                        <Image src={profileImage} alt="Tilde Eriksen Eine" className="object-cover w-48 h-32 rounded-lg" />
-                    </div>
-                    <div className="p-1 flex justify-center w-full h-1/3">
-                        <Image src={profileImage} alt="Tilde Eriksen Eine" className="object-cover w-48 h-32 rounded-lg" />
-                    </div>
+                    {project.images.map((image, index) => (
+                        <div key={index} className="p-1 flex justify-center w-full h-1/3">
+                            <Image src={require(`../../assets/img/${image}`).default} alt={project.title} className="object-cover w-48 h-32 rounded-lg" />
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
