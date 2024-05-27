@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar: React.FC = () => {
     return (
-        <nav className="top-0 w-4/5 md:text-lg font-poppins text-darkblue fixed mx-auto bg-background">
+        <nav className="top-0 w-4/5 md:text-lg font-poppins text-darkblue fixed mx-auto bg-background z-20">
             <div className="container mx-auto flex justify-between items-center py-4">
                 <a href={`#home`} className="text-primary hover:underline text-darkorange">Tilde Eriksen Eine</a>
 

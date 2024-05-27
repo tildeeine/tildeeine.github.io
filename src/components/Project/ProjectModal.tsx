@@ -34,7 +34,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
     };
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center" onClick={handleBackdropClick}>
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-30" onClick={handleBackdropClick}>
             <div className="bg-background p-5 rounded-lg w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 h-5/6 max-h-screen font-poppins flex flex-col md:flex-row overflow-hidden" onClick={handleModalContentClick}>
                 <div className="p-4 space-y-4 w-full md:w-2/3">
                     <div className="flex justify-between items-start">
