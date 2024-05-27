@@ -3,6 +3,25 @@
 @tailwind components;
 @tailwind utilities;
 
+nav {
+  transition: transform 0.3s ease-in-out;
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-container::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-container {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
 
 @layer base {
   body {

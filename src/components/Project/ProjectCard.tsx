@@ -7,14 +7,15 @@ interface ProjectCardProps {
     description: string;
     onReadMore: () => void;
     isImageLeft: boolean;
+    isLargeScreen: boolean;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, onReadMore, isImageLeft }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, onReadMore, isImageLeft, isLargeScreen }) => {
     return (
-        <div className={`flex ${isImageLeft ? 'flex-row' : 'flex-row-reverse'} w-4/5 mx-auto mt-10`} onClick={onReadMore}>
-            <div className="flex rounded-lg overflow-hidden mt-10">
-                {isImageLeft && (
-                    <div className="flex-none w-48 relative">
+        <div className={`flex flex-col md:flex-row ${isImageLeft ? 'md:flex-row' : 'md:flex-row-reverse'} w-full md:w-4/5 mx-auto mt-10`} onClick={onReadMore}>
+            <div className="flex flex-col md:flex-row rounded-lg overflow-hidden w-full">
+                {(isImageLeft || !isLargeScreen) && (
+                    <div className="flex-none w-full md:w-48 h-48 relative">
                         <Image
                             src={image}
                             alt={title}
@@ -25,14 +26,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, on
                     </div>
                 )}
                 <div className="flex-1 p-4">
-                    <h2 className="text-lg text-darkblue font-semibold">{title}</h2>
+                    <h2 className="text-lg md:text-xl text-darkblue font-semibold">{title}</h2>
                     <p className="text-darkblue">{description}</p>
-                    <button onClick={onReadMore} className="inline-block mt-4 px-1 py-1 border border-darkorange text-darkorange rounded hover:bg-darkorange hover:text-background transition-all">
-                        more details
+                    <button onClick={onReadMore} className="inline-block mt-4 px-3 py-2 border border-darkorange text-darkorange rounded hover:bg-darkorange hover:text-background transition-all">
+                        More details
                     </button>
                 </div>
-                {!isImageLeft && (
-                    <div className="flex-none w-48 relative">
+                {(!isImageLeft && isLargeScreen) && (
+                    <div className="flex-none w-full md:w-48 h-48 relative">
                         <Image
                             src={image}
                             alt={title}

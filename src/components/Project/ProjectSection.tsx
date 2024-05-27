@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from "react";
+import { useMediaQuery } from 'react-responsive';
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 import projectsData from "../../assets/projects/projects.json";
@@ -21,6 +22,7 @@ const ProjectSection: React.FC = () => {
     const [currentProject, setCurrentProject] = useState<Project | null>(null);
     const [selectedCategory, setSelectedCategory] = useState("technical"); // Technical is default
     let isImageLeft = true;
+    const isLargeScreen = useMediaQuery({ query: '(min-width: 1024px)' });
 
     const filteredProjects = projectsData.filter(project => project.type === selectedCategory);
 
@@ -61,6 +63,7 @@ const ProjectSection: React.FC = () => {
                             description={project.description}
                             onReadMore={() => openModal(project)}
                             isImageLeft={isImageLeft}
+                            isLargeScreen={isLargeScreen}
                         />
                     );
                     isImageLeft = !isImageLeft; // Toggle the image position for the next card

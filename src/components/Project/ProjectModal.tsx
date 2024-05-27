@@ -1,7 +1,5 @@
-// ProjectModal.tsx
-import React from 'react';
-import Image, { StaticImageData } from 'next/image';
-import profileImage from '../../assets/img/frontphoto.png';
+import React from "react";
+import Image from "next/image";
 
 interface ProjectModalProps {
     project: {
@@ -23,19 +21,18 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
     }
 
     // Function to handle click on the backdrop
-    const handleBackdropClick = (event: { stopPropagation: () => void; }) => {
-        event.stopPropagation(); // Stop click event from propagating to child elements
+    const handleBackdropClick = () => {
         onClose();
     };
 
     // Function to prevent click inside the modal content from closing it
-    const handleModalContentClick = (event: { stopPropagation: () => void; }) => {
+    const handleModalContentClick = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         event.stopPropagation();
     };
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center" onClick={handleBackdropClick}>
-            <div className="bg-background p-5 rounded-lg w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 h-5/6 max-h-screen font-poppins flex flex-col md:flex-row overflow-hidden" onClick={handleModalContentClick}>
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-30" onClick={handleBackdropClick}>
+            <div className="modal-container bg-background p-5 rounded-lg w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 h-5/6 max-h-screen overflow-y-auto font-poppins flex flex-col md:flex-row" onClick={handleModalContentClick}>
                 <div className="p-4 space-y-4 w-full md:w-2/3">
                     <div className="flex justify-between items-start">
                         <h2 className="text-3xl font-bold text-darkblue flex-grow">{project.title}</h2>
@@ -66,32 +63,17 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                         <p>{project.solution}</p>
                     </div>
                 </div>
-
                 {/* Project images */}
-                <div className="flex flex-col w-full md:w-1/3 items-center justify-between">
+                <div className="flex flex-col justify-between md:justify-start lg:justify-between lg:items-end w-full md:w-1/3">
                     {project.images.map((image, index) => (
-                        <div key={index} className="p-1 flex justify-center w-full h-1/3">
-                            <Image src={require(`../../assets/img/${image}`).default} alt={project.title} className="object-cover w-48 h-32 rounded-lg" />
+                        <div key={index} className="p-1 flex justify-center md:justify-end lg:justify-center md:mt-4 w-full">
+                            <Image src={require(`../../assets/img/${image}`).default} alt={project.title} className="object-cover lg:h-32 rounded-lg" />
                         </div>
                     ))}
                 </div>
             </div>
         </div>
-
-
     );
 };
 
 export default ProjectModal;
-
-// {project.images.map((img, index) => (
-//     <div key={index} className="relative w-full mb-4" > {/* Set height to control image size */}
-//         <Image
-//             src={img}
-//             alt={`Screenshot ${index + 1}`}
-//             layout="fill"
-//             objectFit="cover" // Ensure the image covers the area without distortion
-//             className="rounded-lg"
-//         />
-//     </div>
-// ))}

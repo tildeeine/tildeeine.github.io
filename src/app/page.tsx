@@ -1,3 +1,6 @@
+'use client';
+import React, { useState, useEffect } from 'react';
+
 import Navbar from '../components/Navbar'
 import HomeSection from '../components/HomeSection';
 import ProjectSection from '../components/Project/ProjectSection';
@@ -16,7 +19,6 @@ const Page: React.FC = () => {
       <Footer />
     </main>
   );
-}
-
+};
 
 export default Page;
