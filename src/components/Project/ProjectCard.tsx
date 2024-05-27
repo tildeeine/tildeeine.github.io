@@ -2,16 +2,14 @@ import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 
 interface ProjectCardProps {
-    id: number; // Use id instead of key
     image: StaticImageData;
     title: string;
     description: string;
     onReadMore: () => void;
+    isImageLeft: boolean;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ id, image, title, description, onReadMore }) => {
-    const isImageLeft = id % 2 !== 0; // Image on left for odd ids
-
+const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, onReadMore, isImageLeft }) => {
     return (
         <div className={`flex ${isImageLeft ? 'flex-row' : 'flex-row-reverse'} w-4/5 mx-auto mt-10`} onClick={onReadMore}>
             <div className="flex rounded-lg overflow-hidden mt-10">
