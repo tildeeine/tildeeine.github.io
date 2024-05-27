@@ -4,17 +4,27 @@ import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 import projectsData from "../../assets/projects/projects.json";
 
-
+interface Project {
+    title: string;
+    type: string;
+    description: string;
+    coverImage: string;
+    languages: string[];
+    task: string;
+    solution: string;
+    time: string;
+    images: string[];
+}
 
 const ProjectSection: React.FC = () => {
     const [modalOpen, setModalOpen] = useState(false);
-    const [currentProject, setCurrentProject] = useState(null);
+    const [currentProject, setCurrentProject] = useState<Project | null>(null);
     const [selectedCategory, setSelectedCategory] = useState("technical"); // Technical is default
     let isImageLeft = true;
 
     const filteredProjects = projectsData.filter(project => project.type === selectedCategory);
 
-    const openModal = (project: React.SetStateAction<null>) => {
+    const openModal = (project: Project) => {
         setCurrentProject(project);
         setModalOpen(true);
     };
@@ -43,7 +53,7 @@ const ProjectSection: React.FC = () => {
                 </div>
             </div>
             <div className="flex flex-wrap justify-center">
-                {filteredProjects.map((project) => {
+                {filteredProjects.map((project: Project) => {
                     const card = (
                         <ProjectCard
                             image={require(`../../assets/img/${project.coverImage}`).default}

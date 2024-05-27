@@ -10,7 +10,7 @@ interface ProjectModalProps {
         languages: string[];
         task: string;
         solution: string;
-        images: StaticImageData[]; // Array of image URLs
+        images: string[]; // Array of image URLs
         time: string;
     };
     isOpen: boolean;

@@ -55,5 +55,43 @@
             "blockchain1.jpg",
             "blockchain1.jpg"
         ]
+    },
+    {
+        "title": "Thru hike",
+        "type": "personal",
+        "description": "Implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java",
+        "coverImage": "home.jpg",
+        "languages": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "task": "Task description here",
+        "solution": "Solution description here",
+        "time": "Fall 2021",
+        "images": [
+            "blockchain1.jpg",
+            "blockchain1.jpg",
+            "blockchain1.jpg"
+        ]
+    },
+    {
+        "title": "Homepage",
+        "type": "personal",
+        "description": "Implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java",
+        "coverImage": "home.jpg",
+        "languages": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "task": "Task description here",
+        "solution": "Solution description here",
+        "time": "Fall 2021",
+        "images": [
+            "blockchain1.jpg",
+            "blockchain1.jpg",
+            "blockchain1.jpg"
+        ]
     }
 ]
