@@ -10,7 +10,7 @@ const HomeSection: React.FC = () => {
                     <Image src={profileImage} alt="Tilde Eriksen Eine" className="w-3/4 lg:w-full rounded-full" />
                 </div>
                 <div className="flex-1 lg:w-2/3 text-center lg:text-left">
-                    <h1 className="text-5xl lg:text-7xl mt-8 mb-4 text-darkorange">Hello, I&apos;m Tilde! </h1>
+                    <h1 className="text-5xl lg:text-6xl mt-8 mb-4 text-darkorange">Hello, I&apos;m Tilde! </h1>
                     <p className="text-sm lg:text-base mb-8 text-darkblue">
                         I&apos;m a <b>cybersecurity</b> student interested in <b>pentesting</b> and <b>software development</b>, currently in my fifth and last year of a M.Sc in Cybersecurity and Data Communication at NTNU.
                     </p>
