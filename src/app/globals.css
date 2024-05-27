@@ -7,6 +7,17 @@ nav {
   transition: transform 0.3s ease-in-out;
 }
 
+.modal-container::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-container {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
 @layer base {
   body {
     @apply font-[Raleway];
