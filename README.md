@@ -1,12 +1,6 @@
-# Homepage
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Creating a portfolio homepage.
-
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/7da6a9fc1d724462b9e6eb1e96099c1c)](https://app.codacy.com/gh/tildeeine/homepage/dashboard?utm_source=gh\&utm_medium=referral\&utm_content=\&utm_campaign=Badge_grade)
-
-
-
-## Running
+## Getting Started
 
 First, run the development server:
 
@@ -16,14 +10,18 @@ npm run dev
 yarn dev
 # or
 pnpm dev
+# or
+bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## External dependencies
-- Next.js
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Next.js
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
@@ -31,17 +29,8 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-### Libraries
+## Deploy on Vercel
 
-### APIs
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Third-party services
-
-*   [Codacy](https://app.codacy.com/gh/tildeeine/homepage/dashboard) for automated
-    code review on code quality, maintainability, and coverage.
-    *   [Remark-lint]()
-*   [Snyk](https://app.snyk.io/org/tildeeine/flow/import?message=connected) to
-    help detect vulnerabilities in my code and its dependencies.
-
-### Resources
-- [Figma mockup]([https://www.figma.com/file/x0fQp4KdvCRqpFDZuIaA65/aesthetic-portfolio-website-(Community)?type=design&node-id=0%3A1&mode=design&t=EKzy1Xl2DaLmq6WD-1](https://www.figma.com/design/t6SObrgAZtojQg0ebxfCeK/aesthetic-portfolio-website-(Community)?node-id=0%3A1&t=ZafStEhefyvT37SM-1))
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
