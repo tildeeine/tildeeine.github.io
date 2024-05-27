@@ -12,10 +12,10 @@ const HomeSection: React.FC = () => {
                         I&apos;m a <b>cybersecurity</b> student interested in <b>pentesting</b> and <b>software development</b>, currently in my fifth and last year of a M.Sc in Cybersecurity and Data Communication at NTNU.
                     </p>
                     <div className="flex flex-wrap justify-center lg:justify-start">
-                        <button className="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded mr-4 mt-3">
+                        <button className="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded mx-2 lg:mx-4 mt-3">
                             <a href="https://github.com/tildeeine" target="_blank">GitHub</a>
                         </button>
-                        <button className="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded mr-4 mt-3">
+                        <button className="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded lg:mx-4 mt-3">
                             <a href="https://github.com/tildeeine" target="_blank">Resume</a>
                         </button>
                         <button className="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded mt-3">
