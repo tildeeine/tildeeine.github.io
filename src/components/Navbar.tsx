@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Navbar: React.FC = () => {
     const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+    const [isNavbarClick, setIsNavbarClick] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
 
     useEffect(() => {
@@ -9,6 +10,13 @@ const Navbar: React.FC = () => {
             const currentScrollY = window.scrollY;
             if (currentScrollY > lastScrollY) {
                 // Scrolling down
+                if (isNavbarClick) {
+                    setIsNavbarVisible(true);
+                    setTimeout(() => {
+                        setIsNavbarClick(false);
+                    }, 700); // Adjust the delay as needed
+                    return;
+                }
                 setIsNavbarVisible(false);
             } else {
                 // Scrolling up
@@ -22,13 +30,14 @@ const Navbar: React.FC = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [lastScrollY]);
+    }, [lastScrollY, isNavbarClick]);
 
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
+        setIsNavbarClick(true);
     };
 
     const scrollToSection = (sectionId: string) => {
@@ -38,6 +47,7 @@ const Navbar: React.FC = () => {
                 top: section.offsetTop,
                 behavior: 'smooth'
             });
+            setIsNavbarClick(true);
         }
     };
 
