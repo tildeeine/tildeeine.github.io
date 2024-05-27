@@ -8,7 +8,7 @@ interface ProjectModalProps {
         languages: string[];
         task: string;
         solution: string;
-        images: string[]; // Array of image URLs
+        images: string[];
         time: string;
     };
     isOpen: boolean;
