@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+nav {
+  transition: transform 0.3s ease-in-out;
+}
 
 @layer base {
   body {

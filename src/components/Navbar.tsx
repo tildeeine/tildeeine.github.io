@@ -1,12 +1,16 @@
 import React from "react";
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+    isVisible: boolean;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ isVisible }) => {
     return (
-        <nav className="top-0 w-4/5 md:text-lg font-poppins text-darkblue fixed mx-auto bg-background z-20">
+        <nav className={`fixed top-0 left-0 right-0 z-20 bg-background transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
             <div className="container mx-auto flex justify-between items-center py-4">
                 <a href={`#home`} className="text-primary hover:underline text-darkorange">Tilde Eriksen Eine</a>
 
-                <ul className="flex">
+                <ul className="flex text-darkblue">
                     {['Projects', 'About me', 'Contact'].map((item) => (
                         <li key={item} className="mr-6">
                             <a href={`#${item.toLowerCase().replace(' ', '-')}`} className="text-primary hover:underline">
