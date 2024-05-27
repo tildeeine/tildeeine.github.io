@@ -6,6 +6,9 @@ const HomeSection: React.FC = () => {
     return (
         <section id="home" className="font-poppins mt-5 p-8 mx-auto">
             <div className="flex flex-col lg:flex-row items-center justify-between w-4/5 mx-auto">
+                <div className="flex lg:hidden justify-center lg:justify-end mt-8 lg:mt-0 lg:w-1/3">
+                    <Image src={profileImage} alt="Tilde Eriksen Eine" className="w-3/4 lg:w-full rounded-full" />
+                </div>
                 <div className="flex-1 lg:w-2/3 text-center lg:text-left">
                     <h1 className="text-5xl lg:text-7xl mt-8 mb-4 text-darkorange">Hello, I&apos;m Tilde! </h1>
                     <p className="text-sm lg:text-base mb-8 text-darkblue">
@@ -23,7 +26,7 @@ const HomeSection: React.FC = () => {
                         </button>
                     </div>
                 </div>
-                <div className="flex justify-center lg:justify-end mt-8 lg:mt-0 lg:w-1/3">
+                <div className="hidden lg:flex justify-center lg:justify-end mt-8 lg:mt-0 lg:w-1/3">
                     <Image src={profileImage} alt="Tilde Eriksen Eine" className="w-3/4 lg:w-full rounded-full" />
                 </div>
             </div>
