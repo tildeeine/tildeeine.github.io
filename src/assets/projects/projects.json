@@ -1,36 +1,40 @@
 [
     {
-        "title": "Secure Blockchain Implementation",
+        "title": "Highly Dependable Blockchain",
         "type": "technical",
-        "description": "Implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java",
+        "description": "Developed a secure blockchain using the IBFT consensus algorithm, handling Byzantine faults and securing authenthicity and integrity of transactions.",
         "coverImage": "block.jpg",
         "languages": [
-            "HTML",
-            "CSS",
-            "JavaScript"
+            "Java",
+            "Python",
+            "JUnit5",
+            "Maven"
         ],
-        "task": "Task description here",
-        "solution": "Solution description here",
-        "time": "Fall 2021",
+        "task": "Implement a dependable blockchain using IBFT consensus algorithm to handle transactions securely and resist Byzantine faults.",
+        "solution": "Enhanced an existing codebase to implement a secure blockchain. Developed tests using JUnit5 to ensure system dependability, and corrected the IBFT algorithm based on test outputs. Handled client-side transaction processing and ensured protection against replay attacks, double spending, and collaborating byzantine nodes.",
+        "time": "Spring 2024",
         "images": [
-            "blockchain1.jpg",
-            "blockchain2.jpg",
-            "blockchain2.jpg"
+            "home.jpg",
+            "home.jpg",
+            "home.jpg"
         ]
     },
     {
         "title": "Ambient Home Security System",
         "type": "technical",
-        "description": "Implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java",
+        "description": "Developed an ambient system prototype to monitor and ensure the safety of home appliances for at-risk individuals living alone.",
         "coverImage": "ambient.jpg",
         "languages": [
+            "Python",
+            "MicroPython",
+            "C++",
+            "JavaScript",
             "HTML",
-            "CSS",
-            "JavaScript"
+            "CSS"
         ],
-        "task": "Task description here",
-        "solution": "Solution description here",
-        "time": "Fall 2021",
+        "task": "Design a prototype ambient system to help at-risk individuals live independently by monitoring potentially dangerous home appliances.",
+        "solution": "Implemented monitoring for an oven and a door using Raspberry Pi, Arduino, and Nicla Vision. The system includes a web interface built with Flask and React, displaying real-time status updates and activating a kill switch if necessary. Ensured usability with Tailwind CSS for design simplicity.",
+        "time": "Spring 2024",
         "images": [
             "blockchain1.jpg",
             "blockchain1.jpg",
@@ -38,22 +42,43 @@
         ]
     },
     {
-        "title": "Homepage",
+        "title": "Secure Network for Health Records",
         "type": "technical",
-        "description": "Implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java",
+        "description": "Implemented a secure network for signing and accessing electronic health records using firewalls, authentication, and cryptography.",
         "coverImage": "home.jpg",
         "languages": [
-            "HTML",
-            "CSS",
-            "JavaScript"
+            "C++",
+            "C#/.NET",
+            "MySQL",
+            "Vagrant"
         ],
-        "task": "Task description here",
-        "solution": "Solution description here",
-        "time": "Fall 2021",
+        "task": "Create a secure system for managing electronic health records, ensuring confidentiality, integrity, and authenticity of data.",
+        "solution": "Developed a custom cryptographic library for encrypting EHRs, set up a virtual network with firewalls and secure TLS/SSL communications using Vagrant and Virtualbox, and implemented digital signatures for authenticity. Used a mix of symmetric and asymmetric cryptography to protect data and secure key exchange.",
+        "time": "Winter 2023/2024",
         "images": [
             "blockchain1.jpg",
             "blockchain1.jpg",
             "blockchain1.jpg"
+        ]
+    },
+    {
+        "title": "IaC To-Do List Application",
+        "type": "technical",
+        "description": "Deployed a scalable To-Do List application using Terraform, Ansible, and Vagrant for infrastructure-as-code on Google Cloud Platform.",
+        "coverImage": "ambient.jpg",
+        "languages": [
+            "JavaScript",
+            "Terraform",
+            "Ansible",
+            "Vagrant"
+        ],
+        "task": "Deploy a resilient and scalable To-Do List web application using an infrastructure-as-code approach with Terraform, Ansible, and Vagrant.",
+        "solution": "Implemented core operations using Express.js microservices for adding/removing and checking/unchecking items, a React frontend, and a MongoDB database replica set for persistent storage. Set up and managed the infrastructure on Google Cloud Platform using Terraform for IaC and Ansible for configuration management, ensuring consistent environments across development and production. Integrated Prometheus and Grafana for monitoring system health and performance.",
+        "time": "Fall 2023",
+        "images": [
+            "ambient.jpg",
+            "ambient.jpg",
+            "ambient.jpg"
         ]
     },
     {
