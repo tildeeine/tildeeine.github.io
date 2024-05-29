@@ -10,6 +10,7 @@ interface ProjectModalProps {
         solution: string;
         images: string[];
         time: string;
+        link: string;
     };
     isOpen: boolean;
     onClose: () => void;
@@ -49,7 +50,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                             ))}
                         </ul>
                         <div className="ml-auto text-background bg-darkorange rounded-full text-sm px-3 py-1">
-                            <a href="https://github.com/users/tildeeine/projects/1/views/5?pane=issue&itemId=62438984">GitHub</a>
+                            <a href={project.link} target="_blank">See project</a>
                         </div>
                     </div>
                     <p className="text-darkblue">{project.description}</p>

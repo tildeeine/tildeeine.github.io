@@ -17,7 +17,8 @@
             "home.jpg",
             "home.jpg",
             "home.jpg"
-        ]
+        ],
+        "link": "https://github.com/tildeeine/highly_dependable_blockchain"
     },
     {
         "title": "Ambient Home Security System",
@@ -39,7 +40,8 @@
             "blockchain1.jpg",
             "blockchain1.jpg",
             "blockchain1.jpg"
-        ]
+        ],
+        "link": "https://github.com/tildeeine/ambient_home_security"
     },
     {
         "title": "Secure Network for Health Records",
@@ -59,7 +61,8 @@
             "blockchain1.jpg",
             "blockchain1.jpg",
             "blockchain1.jpg"
-        ]
+        ],
+        "link": "https://github.com/tildeeine/secure_network_for_health_records"
     },
     {
         "title": "IaC To-Do List Application",
@@ -79,10 +82,11 @@
             "ambient.jpg",
             "ambient.jpg",
             "ambient.jpg"
-        ]
+        ],
+        "link": "https://github.com/tildeeine/iac_microservice_todolist"
     },
     {
-        "title": "Thru hike",
+        "title": "Hike Trondheim to Oslo, 1 month",
         "type": "personal",
         "description": "Implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java",
         "coverImage": "home.jpg",
@@ -93,30 +97,12 @@
         ],
         "task": "Task description here",
         "solution": "Solution description here",
-        "time": "Fall 2021",
+        "time": "Summer 2021",
         "images": [
             "blockchain1.jpg",
             "blockchain1.jpg",
             "blockchain1.jpg"
-        ]
-    },
-    {
-        "title": "Homepage",
-        "type": "personal",
-        "description": "Implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java",
-        "coverImage": "home.jpg",
-        "languages": [
-            "HTML",
-            "CSS",
-            "JavaScript"
         ],
-        "task": "Task description here",
-        "solution": "Solution description here",
-        "time": "Fall 2021",
-        "images": [
-            "blockchain1.jpg",
-            "blockchain1.jpg",
-            "blockchain1.jpg"
-        ]
+        "link": "https://www.budstikka.no/tilde-20-reiser-hjem-fra-trondheim-til-fots/s/5-55-1085043"
     }
 ]
