@@ -16,13 +16,13 @@ const HomeSection: React.FC = () => {
                     </p>
                     <div className="flex flex-wrap justify-center">
                         <button className="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded mt-2 mx-2">
-                            <a href="https://github.com/tildeeine" target="_blank">GitHub</a>
+                            <a href="https://github.com/tildeeine" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </button>
-                        <button className="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded mt-2 :mx-2">
-                            <a href="https://github.com/tildeeine" target="_blank">Resume</a>
+                        <button className="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded mt-2 mx-2">
+                            <a href="/cv/CV_Tilde_Eriksen_Eine_eng.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                         </button>
                         <button className="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded mt-2 mx-2 lg:mr-10">
-                            <a href="https://www.linkedin.com/in/tildeeine/" target="_blank">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/tildeeine/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </button>
                     </div>
                 </div>
