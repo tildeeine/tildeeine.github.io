@@ -16,7 +16,7 @@ interface Project {
     time: string;
     images: string[];
     link: string;
-    image_description: string;
+    image_description: string[];
 }
 
 const ProjectSection: React.FC = () => {

@@ -11,7 +11,7 @@ interface ProjectModalProps {
         images: string[];
         time: string;
         link: string;
-        image_description: string;
+        image_description: string[];
     };
     isOpen: boolean;
     onClose: () => void;
