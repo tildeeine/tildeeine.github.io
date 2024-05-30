@@ -44,7 +44,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                     <div className="text-primary mb-4 flex items-center text-center text-sm">
                         <ul className="flex flex-wrap w-3/4">
                             {project.languages.map(lang => (
-                                <li key={lang} className="bg-highlighted rounded-full px-3 py-1 mr-2 mb-2">
+                                <li key={lang} className="bg-selected rounded-full px-3 py-1 mr-2 mb-2">
                                     {lang}
                                 </li>
                             ))}

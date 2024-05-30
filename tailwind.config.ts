@@ -24,7 +24,7 @@ const config: Config = {
         'secondary': '#1F526B',
         'background': '#FAF1E6',
         'highlighted': '#F5E6CA',
-        'selected': '#e0d4c5'
+        'selected': '#F6EBDD'
       },
     },
   },
