@@ -50,7 +50,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                             ))}
                         </ul>
                         <div className="ml-auto text-background bg-darkorange rounded-full text-sm px-3 py-1 mb-2 w-1/5">
-                            <a href={project.link} target="_blank">See project</a>
+                            <a href={project.link} target="_blank" rel="noopener noreferrer">See project</a>
                         </div>
                     </div>
                     <p className="text-darkblue">{project.description}</p>
