@@ -42,14 +42,14 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                         </div>
                     </div>
                     <div className="text-darkorange mb-4 flex items-center">
-                        <ul className="flex flex-wrap">
+                        <ul className="flex flex-wrap w-4/5">
                             {project.languages.map(lang => (
                                 <li key={lang} className="bg-mediumbeige rounded-full px-3 py-1 text-sm mr-2 mb-2">
                                     {lang}
                                 </li>
                             ))}
                         </ul>
-                        <div className="ml-auto text-background bg-darkorange rounded-full text-sm px-3 py-1">
+                        <div className="ml-auto text-background bg-darkorange rounded-full text-sm px-3 py-1 mb-2 w-1/5">
                             <a href={project.link} target="_blank">See project</a>
                         </div>
                     </div>
