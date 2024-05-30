@@ -18,6 +18,11 @@
             "block_client.png",
             "block_blockchain.png"
         ],
+        "image_description": [
+            "To-Do List Application",
+            "Metrics Dashboard",
+            "Inventory Management"
+        ],
         "link": "https://github.com/tildeeine/highly_dependable_blockchain"
     },
     {
@@ -41,6 +46,11 @@
             "ambint_dashboard.png",
             "ambint_modal.png"
         ],
+        "image_description": [
+            "To-Do List Application",
+            "Metrics Dashboard",
+            "Inventory Management"
+        ],
         "link": "https://github.com/tildeeine/ambient_home_security"
     },
     {
@@ -61,6 +71,11 @@
             "network_infrastructure.png",
             "network_server_encryption.png",
             "network_doctor_data.png"
+        ],
+        "image_description": [
+            "To-Do List Application",
+            "Metrics Dashboard",
+            "Inventory Management"
         ],
         "link": "https://github.com/tildeeine/secure_network_for_health_records"
     },
@@ -83,6 +98,11 @@
             "iac_metrics.png",
             "iac_inventory.png"
         ],
+        "image_description": [
+            "To-Do List Application",
+            "Metrics Dashboard",
+            "Inventory Management"
+        ],
         "link": "https://github.com/tildeeine/iac_microservice_todolist"
     },
     {
@@ -102,6 +122,11 @@
             "hike_food.jpg",
             "hike_eat.jpg",
             "hike_tent.jpg"
+        ],
+        "image_description": [
+            "To-Do List Application",
+            "Metrics Dashboard",
+            "Inventory Management"
         ],
         "link": "https://www.budstikka.no/tilde-20-reiser-hjem-fra-trondheim-til-fots/s/5-55-1085043"
     }
