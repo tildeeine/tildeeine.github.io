@@ -54,10 +54,10 @@ const Navbar: React.FC = () => {
     return (
         <nav className={`fixed top-0 left-0 right-0 z-20 bg-background transition-transform duration-300 ${isNavbarVisible ? 'translate-y-0' : '-translate-y-full'}`}>
             <div className="container mx-auto flex justify-between items-center py-4 text-lg">
-                <p className="text-primary hover:underline text-darkorange ml-2" onClick={scrollToTop}>
+                <p className="text-primary hover:underline text-primary ml-2" onClick={scrollToTop}>
                     Tilde Eriksen Eine
                 </p>
-                <ul className="flex text-darkblue">
+                <ul className="flex text-secondary">
                     {['Projects', 'About me', 'Contact'].map((item) => (
                         <li key={item} className="mr-6">
                             <a

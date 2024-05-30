@@ -15,6 +15,8 @@ interface Project {
     solution: string;
     time: string;
     images: string[];
+    link: string;
+    image_description: string[];
 }
 
 const ProjectSection: React.FC = () => {
@@ -34,7 +36,7 @@ const ProjectSection: React.FC = () => {
     return (
         <section id='projects'>
             <div className="mt-20 py-10 w-4/5 mx-auto">
-                <h1 className="text-4xl font-poppins text-darkorange text-left">
+                <h1 className="text-4xl font-poppins text-primary text-left">
                     Projects
                 </h1>
             </div>
@@ -42,13 +44,13 @@ const ProjectSection: React.FC = () => {
                 <div>
                     <button
                         onClick={() => setSelectedCategory("technical")}
-                        className={`border border-darkorange font-bold py-2 px-4 rounded-l-lg ${selectedCategory === "technical" ? "bg-darkorange text-background" : "bg-background text-darkorange hover:bg-darkorange hover:text-background"}`}
+                        className={`border border-primary font-bold py-2 px-4 rounded-l-lg ${selectedCategory === "technical" ? "bg-primary text-background" : "bg-background text-primary hover:bg-primary hover:text-background"}`}
                     >
                         Technical
                     </button>
                     <button
                         onClick={() => setSelectedCategory("personal")}
-                        className={`border border-darkorange font-bold py-2 px-4 rounded-r-lg ${selectedCategory === "personal" ? "bg-darkorange text-background" : "bg-background text-darkorange hover:bg-darkorange hover:text-background"}`}
+                        className={`border border-primary font-bold py-2 px-4 rounded-r-lg ${selectedCategory === "personal" ? "bg-primary text-background" : "bg-background text-primary hover:bg-primary hover:text-background"}`}
                     >
                         Personal
                     </button>
