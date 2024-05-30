@@ -11,6 +11,7 @@ interface ProjectModalProps {
         images: string[];
         time: string;
         link: string;
+        image_description: string;
     };
     isOpen: boolean;
     onClose: () => void;
@@ -42,14 +43,14 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                         </div>
                     </div>
                     <div className="text-primary mb-4 flex items-center text-center text-sm">
-                        <ul className="flex flex-wrap w-3/4">
+                        <ul className="flex flex-wrap w-3/4 pointer-events-none">
                             {project.languages.map(lang => (
                                 <li key={lang} className="bg-selected rounded-full px-3 py-1 mr-2 mb-2">
                                     {lang}
                                 </li>
                             ))}
                         </ul>
-                        <div className="ml-auto text-background bg-primary hover:scale-105 rounded-full px-3 py-1 mb-2 w-1/4">
+                        <div className="ml-auto text-background bg-primary hover:bg-primary-dark rounded-full px-3 py-1 mb-2 w-1/4">
                             <a href={project.link} target="_blank" rel="noopener noreferrer">See project</a>
                         </div>
                     </div>
@@ -65,8 +66,9 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                 {/* Project images */}
                 <div className="flex flex-col justify-between md:justify-start lg:justify-between lg:items-end w-full md:w-1/3">
                     {project.images.map((image, index) => (
-                        <div key={index} className="p-1 flex justify-center md:justify-end lg:justify-center md:mt-4 w-full">
-                            <Image src={require(`../../assets/img/${image}`).default} alt={project.title} className="object-cover mt-2 mb-2 h-32 lg:h-36 xl:h-48 rounded-lg" />
+                        <div key={index} className="p-1 flex flex-wrap justify-center md:justify-end lg:justify-center md:mt-4 w-full">
+                            <Image src={require(`../../assets/img/${image}`).default} alt={project.title} className="object-cover mb-2 h-32 lg:h-36 xl:h-48 rounded-lg" />
+                            <p className="text-xs text-left text-secondary">Test: {project.image_description}</p>
                         </div>
                     ))}
                 </div>
