@@ -66,7 +66,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                 <div className="flex flex-col justify-between md:justify-start lg:justify-between lg:items-end w-full md:w-1/3">
                     {project.images.map((image, index) => (
                         <div key={index} className="p-1 flex justify-center md:justify-end lg:justify-center md:mt-4 w-full">
-                            <Image src={require(`../../assets/img/${image}`).default} alt={project.title} className="object-cover lg:h-32 rounded-lg" />
+                            <Image src={require(`../../assets/img/${image}`).default} alt={project.title} className="object-cover mt-2 h-32 lg:h-36 xl:h-48 rounded-lg" />
                         </div>
                     ))}
                 </div>
