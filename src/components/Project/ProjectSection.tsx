@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useMediaQuery } from 'react-responsive';
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
@@ -23,10 +23,17 @@ const ProjectSection: React.FC = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [currentProject, setCurrentProject] = useState<Project | null>(null);
     const [selectedCategory, setSelectedCategory] = useState("technical"); // Technical is default
+    const [isLargeScreen, setIsLargeScreen] = useState(false);
     let isImageLeft = true;
-    const isLargeScreen = useMediaQuery({ query: '(min-width: 1024px)' });
 
     const filteredProjects = projectsData.filter(project => project.type === selectedCategory);
+
+    const isLargeScreenQuery = useMediaQuery({ query: '(min-width: 1024px)' });
+
+    useEffect(() => {
+        setIsLargeScreen(isLargeScreenQuery);
+    }, [isLargeScreenQuery]);
+
 
     const openModal = (project: Project) => {
         setCurrentProject(project);
@@ -57,9 +64,10 @@ const ProjectSection: React.FC = () => {
                 </div>
             </div>
             <div className="flex flex-wrap justify-center">
-                {filteredProjects.map((project: Project) => {
+                {filteredProjects.map((project: Project, index: number) => {
                     const card = (
                         <ProjectCard
+                            key={index}
                             image={require(`../../assets/img/${project.coverImage}`).default}
                             title={project.title}
                             description={project.description}

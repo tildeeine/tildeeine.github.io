@@ -19,8 +19,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, on
                         <Image
                             src={image}
                             alt={title}
-                            layout="fill"
-                            objectFit="cover"
+                            fill
+                            style={{ objectFit: 'cover' }}
                             className={'rounded-l-lg'}
                         />
                     </div>
@@ -37,8 +37,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, on
                         <Image
                             src={image}
                             alt={title}
-                            layout="fill"
-                            objectFit="cover"
+                            fill
+                            style={{ objectFit: 'cover' }}
                             className={'rounded-r-lg'}
                         />
                     </div>
