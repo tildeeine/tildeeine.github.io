@@ -5,14 +5,14 @@ import profileImage from '../assets/img/whoami.jpg';
 const AboutSection: React.FC = () => {
     return (
         <section id='about-me'>
-            <div className="flex justify-center mt-40 text-4xl font-poppins font-semibold text-darkorange">
+            <div className="flex justify-center mt-40 text-4xl font-poppins font-semibold text-primary">
                 <h2>Who am I?</h2>
             </div>
             <div className="flex justify-center">
                 <Image src={profileImage} alt="Tilde Eriksen Eine" className="mt-3 w-4/5 rounded-3xl" />
             </div>
             <div className="flex justify-center items-center mt-10">
-                <div className="w-4/5 text-center text-lg font-poppins text-darkblue">
+                <div className="w-4/5 text-center text-lg font-poppins text-secondary">
                     <div className="mb-6">
                         <p>Hey there! I&aposm currently wrapping up my fifth and final year in Cybersecurity and Data Communications at NTNU. I&aposm all about diving deep into software development and cybersecurity, with a real knack for tackling problems from all angles. I&aposve already spent some time at Visma developing software, and I&aposm lined up for a cool pentesting gig at Mnemonic this summer.</p>
                     </div>

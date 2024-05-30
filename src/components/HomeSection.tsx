@@ -10,18 +10,18 @@ const HomeSection: React.FC = () => {
                     <Image src={profileImage} alt="Tilde Eriksen Eine" className="w-3/4 lg:w-full rounded-full" />
                 </div>
                 <div className="flex-1 lg:w-2/3 text-center lg:text-left">
-                    <h1 className="text-5xl lg:text-6xl mt-8 mb-4 text-darkorange">Hello, I&apos;m Tilde! </h1>
-                    <p className="text-sm lg:text-base mb-8 text-darkblue">
+                    <h1 className="text-5xl lg:text-6xl mt-8 mb-4 text-primary">Hello, I&apos;m Tilde! </h1>
+                    <p className="text-sm lg:text-base mb-8 text-secondary">
                         I&apos;m a <b>cybersecurity</b> student interested in <b>pentesting</b> and <b>software development</b>, currently in my fifth and last year of a M.Sc in Cybersecurity and Data Communication at NTNU.
                     </p>
                     <div className="flex flex-wrap justify-center">
-                        <button className="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded mt-2 mx-2">
+                        <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-background py-2 px-4 border border-primary hover:border-transparent rounded mt-2 mx-2">
                             <a href="https://github.com/tildeeine" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </button>
-                        <button className="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded mt-2 mx-2">
+                        <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-background py-2 px-4 border border-primary hover:border-transparent rounded mt-2 mx-2">
                             <a href="/cv/CV_Tilde_Eriksen_Eine_eng.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                         </button>
-                        <button className="bg-transparent hover:bg-darkorange text-darkorange font-semibold hover:text-background py-2 px-4 border border-darkorange hover:border-transparent rounded mt-2 mx-2 lg:mr-10">
+                        <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-background py-2 px-4 border border-primary hover:border-transparent rounded mt-2 mx-2 lg:mr-10">
                             <a href="https://www.linkedin.com/in/tildeeine/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </button>
                     </div>

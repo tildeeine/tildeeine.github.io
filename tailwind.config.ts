@@ -20,10 +20,11 @@ const config: Config = {
         'poppins': ['Poppins']
       },
       colors: {
-        'darkorange': '#F55200',
-        'darkblue': '#1F526B',
+        'primary': '#F55200',
+        'secondary': '#1F526B',
         'background': '#FAF1E6',
-        'mediumbeige': '#F5E6CA'
+        'highlighted': '#F5E6CA',
+        'selected': '#e0d4c5'
       },
     },
   },
