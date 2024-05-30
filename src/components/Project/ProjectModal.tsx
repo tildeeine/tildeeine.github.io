@@ -41,26 +41,24 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                             <p>{project.time}</p>
                         </div>
                     </div>
-                    <div className="text-darkorange mb-4 flex items-center">
-                        <ul className="flex flex-wrap w-4/5">
+                    <div className="text-darkorange mb-4 flex items-center text-center text-sm">
+                        <ul className="flex flex-wrap w-3/4">
                             {project.languages.map(lang => (
-                                <li key={lang} className="bg-mediumbeige rounded-full px-3 py-1 text-sm mr-2 mb-2">
+                                <li key={lang} className="bg-mediumbeige rounded-full px-3 py-1 mr-2 mb-2">
                                     {lang}
                                 </li>
                             ))}
                         </ul>
-                        <div className="ml-auto text-background bg-darkorange rounded-full text-sm px-3 py-1 mb-2 w-1/5">
+                        <div className="ml-auto text-background bg-darkorange rounded-full px-3 py-1 mb-2 w-1/4">
                             <a href={project.link} target="_blank" rel="noopener noreferrer">See project</a>
                         </div>
                     </div>
-                    <p className="text-darkblue">{project.description}</p>
-                    <hr className="my-4 border-darkblue" />
-                    <div className="text-darkblue">
-                        <h3 className="text-lg font-semibold">Task</h3>
+                    <div className="text-darkblue text-sm">
+                        <h3 className="text-md font-semibold">Task</h3>
                         <p>{project.task}</p>
                     </div>
-                    <div className="text-darkblue">
-                        <h3 className="text-lg font-semibold">Solution</h3>
+                    <div className="text-darkblue text-sm">
+                        <h3 className="text-md font-semibold">Solution</h3>
                         <p>{project.solution}</p>
                     </div>
                 </div>
