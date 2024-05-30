@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image';
-import profileImage from '../assets/img/whoami.jpg';
+import profileImage from '../assets/img/whoami.webp';
 
 const AboutSection: React.FC = () => {
     return (

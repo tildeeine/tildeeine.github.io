@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image';
-import profileImage from '../assets/img/frontphoto.png';
+import profileImage from '../assets/img/frontphoto.webp';
 
 const HomeSection: React.FC = () => {
     return (
