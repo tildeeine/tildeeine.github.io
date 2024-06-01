@@ -25,6 +25,7 @@ const ProjectSection: React.FC = () => {
     const [currentProject, setCurrentProject] = useState<Project | null>(null);
     const [selectedCategory, setSelectedCategory] = useState<string>("technical"); // Technical is default
     const [isLargeScreen, setIsLargeScreen] = useState(false);
+    const [isTransitioning, setIsTransitioning] = useState(false);
     let isImageLeft = true;
 
     const filteredProjects = projectsData.filter(project => project.type === selectedCategory);
@@ -40,6 +41,17 @@ const ProjectSection: React.FC = () => {
         setModalOpen(true);
     };
 
+    const handleCategoryChange = (category: string) => {
+        if (category !== selectedCategory) {
+            setIsTransitioning(true);
+            setTimeout(() => {
+                setSelectedCategory(category);
+                setIsTransitioning(false);
+            }, 300); // Adjust the timeout duration to match the animation duration
+        }
+    };
+
+
     return (
         <section id='projects'>
             <div className="mt-20 py-10 w-4/5 mx-auto">
@@ -50,10 +62,10 @@ const ProjectSection: React.FC = () => {
             <div className="w-4/5 mx-auto">
                 <ToggleButtons
                     selectedCategory={selectedCategory}
-                    setSelectedCategory={setSelectedCategory}
+                    setSelectedCategory={handleCategoryChange}
                 />
             </div>
-            <div className="flex flex-wrap justify-center">
+            <div className={`flex flex-wrap justify-center transition-opacity duration-500 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
                 {filteredProjects.map((project: Project, index: number) => {
                     const card = (
                         <ProjectCard

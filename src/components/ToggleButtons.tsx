@@ -2,13 +2,12 @@ import React from 'react';
 
 interface ToggleButtonsProps {
     selectedCategory: string;
-    setSelectedCategory: React.Dispatch<React.SetStateAction<string>>;
+    setSelectedCategory: (category: string) => void;
 }
 
 const ToggleButtons: React.FC<ToggleButtonsProps> = ({ selectedCategory, setSelectedCategory }) => {
     return (
         <div className="relative flex justify-start w-1/3 my-4">
-            {/* Sliding background */}
             <div
                 className={`absolute top-0 bottom-0 w-1/2 bg-primary rounded-lg transition-all duration-500 ${selectedCategory === "personal" ? "translate-x-full" : ""
                     }`}
