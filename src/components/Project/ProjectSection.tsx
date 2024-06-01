@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useMediaQuery } from 'react-responsive';
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
+import ToggleButtons from "../ToggleButtons";
 import projectsData from "../../assets/projects/projects.json";
 
 interface Project {
@@ -22,7 +23,7 @@ interface Project {
 const ProjectSection: React.FC = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [currentProject, setCurrentProject] = useState<Project | null>(null);
-    const [selectedCategory, setSelectedCategory] = useState("technical"); // Technical is default
+    const [selectedCategory, setSelectedCategory] = useState<string>("technical"); // Technical is default
     const [isLargeScreen, setIsLargeScreen] = useState(false);
     let isImageLeft = true;
 
@@ -33,7 +34,6 @@ const ProjectSection: React.FC = () => {
     useEffect(() => {
         setIsLargeScreen(isLargeScreenQuery);
     }, [isLargeScreenQuery]);
-
 
     const openModal = (project: Project) => {
         setCurrentProject(project);
@@ -47,21 +47,11 @@ const ProjectSection: React.FC = () => {
                     Projects
                 </h1>
             </div>
-            <div className="flex flex-wrap justify-right w-4/5 mx-auto">
-                <div>
-                    <button
-                        onClick={() => setSelectedCategory("technical")}
-                        className={`border border-primary font-bold py-2 px-4 rounded-l-lg ${selectedCategory === "technical" ? "bg-primary text-background" : "bg-background text-primary hover:bg-primary hover:text-background"}`}
-                    >
-                        Technical
-                    </button>
-                    <button
-                        onClick={() => setSelectedCategory("personal")}
-                        className={`border border-primary font-bold py-2 px-4 rounded-r-lg ${selectedCategory === "personal" ? "bg-primary text-background" : "bg-background text-primary hover:bg-primary hover:text-background"}`}
-                    >
-                        Personal
-                    </button>
-                </div>
+            <div className="w-4/5 mx-auto">
+                <ToggleButtons
+                    selectedCategory={selectedCategory}
+                    setSelectedCategory={setSelectedCategory}
+                />
             </div>
             <div className="flex flex-wrap justify-center">
                 {filteredProjects.map((project: Project, index: number) => {
@@ -87,7 +77,6 @@ const ProjectSection: React.FC = () => {
                     />
                 )}
             </div>
-
         </section>
     );
 }
