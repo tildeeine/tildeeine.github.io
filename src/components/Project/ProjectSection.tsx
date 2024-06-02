@@ -78,7 +78,7 @@ const ProjectSection: React.FC = () => {
                             isLargeScreen={isLargeScreen}
                         />
                     );
-                    isImageLeft = !isImageLeft; // Toggle the image position for the next card
+                    isImageLeft = !isImageLeft;
                     return card;
                 })}
                 {currentProject && (
