@@ -69,7 +69,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
             <div className={`fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-30 ${isOpen ? 'block' : 'hidden'}`}>
                 <div
                     ref={modalRef}
-                    className={`modal-container bg-background p-5 rounded-lg w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 h-5/6 max-h-screen overflow-y-auto font-poppins flex flex-col md:flex-row transform transition-all duration-500 ${isOpen ? 'animate-slide-up' : 'animate-slide-down'}`}
+                    className={`modal-container bg-background p-5 rounded-lg w-11/12 md:w-3/4  xl:w-1/2 h-5/6 max-h-screen overflow-y-auto font-poppins flex flex-col md:flex-row transform transition-all duration-500 ${isOpen ? 'animate-slide-up' : 'animate-slide-down'}`}
                 >
                     <div className="p-4 space-y-4 w-full md:w-2/3">
                         <div className="flex justify-between items-start">
@@ -99,7 +99,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                             <p className="whitespace-pre-line pb-4">{project.solution}</p>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-between md:justify-start lg:justify-between lg:items-center w-full md:w-1/3 mt-4">
+                    <div className="flex flex-col justify-between items-center lg:items-center w-full md:w-1/3 mt-4">
                         {project.images.map((image, index) => (
                             <div key={index} className="p-1 flex flex-wrap justify-center md:justify-end lg:justify-center w-full cursor-pointer" onClick={() => handleImageClick(index)}>
                                 <Image

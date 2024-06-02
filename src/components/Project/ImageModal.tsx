@@ -45,9 +45,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ images, descriptions, currentIn
                 ref={modalRef}
                 className="relative bg-background p-5 rounded-lg w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 max-h-[80vh] flex flex-col justify-center items-center overflow-hidden"
             >
-                <button className="absolute top-4 right-4 text-secondary" onClick={onClose}>
-                    &times;
-                </button>
+
                 <button className="absolute left-4 top-1/2 transform -translate-y-1/2 text-secondary" onClick={onPrev}>
                     &#10094;
                 </button>
