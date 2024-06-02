@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from "react";
-import Image from "next/image";
+import React, { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
+import ImageModal from './ImageModal';
 
 interface ProjectModalProps {
     project: {
@@ -19,38 +20,53 @@ interface ProjectModalProps {
 
 const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose }) => {
     const modalRef = useRef<HTMLDivElement>(null);
+    const [isImageModalOpen, setImageModalOpen] = useState(false);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const handleImageClick = (index: number) => {
+        setCurrentImageIndex(index);
+        setImageModalOpen(true);
+    };
+
+    const handleNextImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.images.length);
+    };
+
+    const handlePrevImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex - 1 + project.images.length) % project.images.length);
+    };
 
     useEffect(() => {
         const modalElement = modalRef.current;
 
         const handleEscapeKey = (event: KeyboardEvent) => {
-            if (event.key === "Escape" && isOpen) {
+            if (event.key === 'Escape' && isOpen && !isImageModalOpen) {
                 onClose();
             }
         };
 
         const handleOutsideClick = (event: MouseEvent) => {
-            if (modalElement && !modalElement.contains(event.target as Node)) {
+            if (modalElement && !modalElement.contains(event.target as Node) && !isImageModalOpen) {
                 onClose();
             }
         };
 
         if (isOpen) {
-            document.addEventListener("keydown", handleEscapeKey);
-            document.addEventListener("mousedown", handleOutsideClick);
+            document.addEventListener('keydown', handleEscapeKey);
+            document.addEventListener('mousedown', handleOutsideClick);
         }
 
         return () => {
-            document.removeEventListener("keydown", handleEscapeKey);
-            document.removeEventListener("mousedown", handleOutsideClick);
+            document.removeEventListener('keydown', handleEscapeKey);
+            document.removeEventListener('mousedown', handleOutsideClick);
         };
-    }, [isOpen, onClose]);
+    }, [isOpen, onClose, isImageModalOpen]);
 
     return (
-        <div className={`fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-30 ${isOpen ? "block" : "hidden"}`}>
+        <div className={`fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-30 ${isOpen ? 'block' : 'hidden'}`}>
             <div
                 ref={modalRef}
-                className={`modal-container bg-background p-5 rounded-lg w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 h-5/6 max-h-screen overflow-y-auto font-poppins flex flex-col md:flex-row transform transition-all duration-500 ${isOpen ? "animate-slide-up" : "animate-slide-down"}`}
+                className={`modal-container bg-background p-5 rounded-lg w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 h-5/6 max-h-screen overflow-y-auto font-poppins flex flex-col md:flex-row transform transition-all duration-500 ${isOpen ? 'animate-slide-up' : 'animate-slide-down'}`}
             >
                 <div className="p-4 space-y-4 w-full md:w-2/3">
                     <div className="flex justify-between items-start">
@@ -86,8 +102,9 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                             <Image
                                 src={require(`../../assets/img/${image}`).default}
                                 alt={project.title}
-                                className="object-cover h-32 lg:h-36 xl:h-48 rounded-lg"
+                                className="object-cover h-32 lg:h-36 xl:h-48 rounded-lg cursor-pointer"
                                 loading="eager"
+                                onClick={() => handleImageClick(index)}
                             />
                             <p className="text-xs text-left text-secondary mb-2 mt-1">
                                 {project.image_description[index]}
@@ -96,6 +113,16 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                     ))}
                 </div>
             </div>
+            {isImageModalOpen && (
+                <ImageModal
+                    images={project.images}
+                    descriptions={project.image_description}
+                    currentIndex={currentImageIndex}
+                    onClose={() => setImageModalOpen(false)}
+                    onNext={handleNextImage}
+                    onPrev={handlePrevImage}
+                />
+            )}
         </div>
     );
 };
