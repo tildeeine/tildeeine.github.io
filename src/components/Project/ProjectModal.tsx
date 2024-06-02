@@ -105,7 +105,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                                 <Image
                                     src={require(`../../assets/img/${image}`).default}
                                     alt={project.title}
-                                    className="object-cover h-32 lg:h-36 xl:h-48 rounded-lg"
+                                    className="object-cover h-32 lg:h-40 xl:h-48 rounded-lg"
                                     loading="eager"
                                 />
                                 <p className="text-xs text-left text-secondary mb-2 mt-1">
