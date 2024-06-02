@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 
 interface ProjectModalProps {
@@ -18,23 +18,40 @@ interface ProjectModalProps {
 }
 
 const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose }) => {
-    if (!isOpen) {
-        return null;
-    }
+    const modalRef = useRef<HTMLDivElement>(null);
 
-    // Function to handle click on the backdrop
-    const handleBackdropClick = () => {
-        onClose();
-    };
+    useEffect(() => {
+        const modalElement = modalRef.current;
 
-    // Function to prevent click inside the modal content from closing it
-    const handleModalContentClick = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-        event.stopPropagation();
-    };
+        const handleEscapeKey = (event: KeyboardEvent) => {
+            if (event.key === "Escape" && isOpen) {
+                onClose();
+            }
+        };
+
+        const handleOutsideClick = (event: MouseEvent) => {
+            if (modalElement && !modalElement.contains(event.target as Node)) {
+                onClose();
+            }
+        };
+
+        if (isOpen) {
+            document.addEventListener("keydown", handleEscapeKey);
+            document.addEventListener("mousedown", handleOutsideClick);
+        }
+
+        return () => {
+            document.removeEventListener("keydown", handleEscapeKey);
+            document.removeEventListener("mousedown", handleOutsideClick);
+        };
+    }, [isOpen, onClose]);
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-30" onClick={handleBackdropClick}>
-            <div className="modal-container bg-background p-5 rounded-lg w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 h-5/6 max-h-screen overflow-y-auto font-poppins flex flex-col md:flex-row" onClick={handleModalContentClick}>
+        <div className={`fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-30 ${isOpen ? "block" : "hidden"}`}>
+            <div
+                ref={modalRef}
+                className={`modal-container bg-background p-5 rounded-lg w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 h-5/6 max-h-screen overflow-y-auto font-poppins flex flex-col md:flex-row transform transition-all duration-500 ${isOpen ? "animate-slide-up" : "animate-slide-down"}`}
+            >
                 <div className="p-4 space-y-4 w-full md:w-2/3">
                     <div className="flex justify-between items-start">
                         <h2 className="text-3xl font-bold text-secondary flex-grow">{project.title}</h2>
@@ -54,20 +71,24 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                             <a href={project.link} target="_blank" rel="noopener noreferrer">See project</a>
                         </div>
                     </div>
-                    <div className="text-secondary text-sm">
+                    <div className="text-secondary text-sm mb-4">
                         <h3 className="text-md font-semibold">Task</h3>
-                        <p>{project.task}</p>
+                        <p className="whitespace-pre-line">{project.task}</p>
                     </div>
-                    <div className="text-secondary text-sm">
+                    <div className="text-secondary text-sm mb-4">
                         <h3 className="text-md font-semibold">Solution</h3>
-                        <p>{project.solution}</p>
+                        <p className="whitespace-pre-line pb-4">{project.solution}</p>
                     </div>
                 </div>
-                {/* Project images */}
                 <div className="flex flex-col justify-between md:justify-start lg:justify-between lg:items-end w-full md:w-1/3 mt-4">
                     {project.images.map((image, index) => (
                         <div key={index} className="p-1 flex flex-wrap justify-center md:justify-end lg:justify-center w-full">
-                            <Image src={require(`../../assets/img/${image}`).default} alt={project.title} className="object-cover h-32 lg:h-36 xl:h-48 rounded-lg" />
+                            <Image
+                                src={require(`../../assets/img/${image}`).default}
+                                alt={project.title}
+                                className="object-cover h-32 lg:h-36 xl:h-48 rounded-lg"
+                                loading="eager"
+                            />
                             <p className="text-xs text-left text-secondary mb-2 mt-1">
                                 {project.image_description[index]}
                             </p>

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useMediaQuery } from 'react-responsive';
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
+import ToggleButtons from "../ToggleButtons";
 import projectsData from "../../assets/projects/projects.json";
 
 interface Project {
@@ -22,8 +23,9 @@ interface Project {
 const ProjectSection: React.FC = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [currentProject, setCurrentProject] = useState<Project | null>(null);
-    const [selectedCategory, setSelectedCategory] = useState("technical"); // Technical is default
+    const [selectedCategory, setSelectedCategory] = useState<string>("technical"); // Technical is default
     const [isLargeScreen, setIsLargeScreen] = useState(false);
+    const [isTransitioning, setIsTransitioning] = useState(false);
     let isImageLeft = true;
 
     const filteredProjects = projectsData.filter(project => project.type === selectedCategory);
@@ -34,11 +36,21 @@ const ProjectSection: React.FC = () => {
         setIsLargeScreen(isLargeScreenQuery);
     }, [isLargeScreenQuery]);
 
-
     const openModal = (project: Project) => {
         setCurrentProject(project);
         setModalOpen(true);
     };
+
+    const handleCategoryChange = (category: string) => {
+        if (category !== selectedCategory) {
+            setIsTransitioning(true);
+            setTimeout(() => {
+                setSelectedCategory(category);
+                setIsTransitioning(false);
+            }, 300); // Adjust the timeout duration to match the animation duration
+        }
+    };
+
 
     return (
         <section id='projects'>
@@ -47,23 +59,13 @@ const ProjectSection: React.FC = () => {
                     Projects
                 </h1>
             </div>
-            <div className="flex flex-wrap justify-right w-4/5 mx-auto">
-                <div>
-                    <button
-                        onClick={() => setSelectedCategory("technical")}
-                        className={`border border-primary font-bold py-2 px-4 rounded-l-lg ${selectedCategory === "technical" ? "bg-primary text-background" : "bg-background text-primary hover:bg-primary hover:text-background"}`}
-                    >
-                        Technical
-                    </button>
-                    <button
-                        onClick={() => setSelectedCategory("personal")}
-                        className={`border border-primary font-bold py-2 px-4 rounded-r-lg ${selectedCategory === "personal" ? "bg-primary text-background" : "bg-background text-primary hover:bg-primary hover:text-background"}`}
-                    >
-                        Personal
-                    </button>
-                </div>
+            <div className="w-4/5 mx-auto">
+                <ToggleButtons
+                    selectedCategory={selectedCategory}
+                    setSelectedCategory={handleCategoryChange}
+                />
             </div>
-            <div className="flex flex-wrap justify-center">
+            <div className={`flex flex-wrap justify-center transition-opacity duration-500 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
                 {filteredProjects.map((project: Project, index: number) => {
                     const card = (
                         <ProjectCard
@@ -76,7 +78,7 @@ const ProjectSection: React.FC = () => {
                             isLargeScreen={isLargeScreen}
                         />
                     );
-                    isImageLeft = !isImageLeft; // Toggle the image position for the next card
+                    isImageLeft = !isImageLeft;
                     return card;
                 })}
                 {currentProject && (
@@ -87,7 +89,6 @@ const ProjectSection: React.FC = () => {
                     />
                 )}
             </div>
-
         </section>
     );
 }
