@@ -2,7 +2,7 @@
     {
         "title": "Highly Dependable Blockchain",
         "type": "technical",
-        "description": "Developed a secure blockchain using the IBFT consensus algorithm, handling Byzantine faults and securing authenthicity and integrity of transactions.",
+        "description": "Developed a secure blockchain using the IBFT consensus algorithm, ensuring integrity and resilience against Byzantine faults.",
         "coverImage": "block_maven.webp",
         "languages": [
             "Java",
@@ -10,8 +10,8 @@
             "JUnit5",
             "Maven"
         ],
-        "task": "Implement a dependable blockchain using IBFT consensus algorithm to handle transactions securely and resist Byzantine faults.",
-        "solution": "Enhanced an existing codebase to implement a secure blockchain. Developed tests using JUnit5 to ensure system dependability, and corrected the IBFT algorithm based on test outputs. Handled client-side transaction processing and ensured protection against replay attacks, double spending, and collaborating byzantine nodes.",
+        "task": "Implement a secure and dependable blockchain utilizing the IBFT consensus algorithm to handle transactions securely, resist Byzantine faults, and maintain authenticity and integrity.",
+        "solution": "Continued work on an existing codebase to implement a secure blockchain based on the IBFT consensus algorithm. Developed tests using JUnit5 to ensure system dependability, and refined the IBFT algorithm based on test outputs. \n\nImplemented the client-side transaction processing and ensured protection against replay attacks, double spending, and Byzantine node collaboration. Implemented digital signature-based authentication to uphold message integrity and authenticity. \n\nAchieved industry-standard execution of blocks and dependability guarantees such as security, validity, liveness, and protection against Byzantine behavior.",
         "time": "Spring 2024",
         "images": [
             "block_byzantine_quorum.webp",
@@ -38,8 +38,8 @@
             "HTML",
             "CSS"
         ],
-        "task": "Design a prototype ambient system to help at-risk individuals live independently by monitoring potentially dangerous home appliances.",
-        "solution": "Implemented monitoring for an oven and a door using Raspberry Pi, Arduino, and Nicla Vision. The system includes a web interface built with Flask and React, displaying real-time status updates and activating a kill switch if necessary. Ensured usability with Tailwind CSS for design simplicity.",
+        "task": "Design any choice of ambient system using using RPis and Arduinos. Design a prototype ambient system to assist at-risk individuals in living independently by monitoring potentially hazardous home appliances.",
+        "solution": "My group wanted to do a project that could allow at-risk individuals to stay at home for longer instead of moving to a care home, by monitoring potentially hazardous home appliances. This project is especially directed at increasing the feeling of safety for dementia patients and their caretakers. Implemented monitoring for an oven and a door using Raspberry Pi, Arduino, and Nicla Vision. The system features a web interface created with Flask and React, which offers real-time status updates like current temperature readings and time since door was last opened, as well as real-time photos from the Nicla Vision camera component. On dangerous readings, the option to activate a kill switch for the oven appears, which allows the user to remotely turn off the oven. This feature can be used by the resident of the house, or by caretakers who would also have access to the platform to monitor the resident's safety. \n\nThe system is designed to be user-friendly and accessible, with a simple and intuitive interface that provides clear information and control options. The system is also designed to be scalable, allowing for additional sensors and appliances to be added in the future to further enhance safety and monitoring capabilities.",
         "time": "Spring 2024",
         "images": [
             "ambint_diagram.webp",
@@ -65,7 +65,7 @@
             "Vagrant"
         ],
         "task": "Create a secure system for managing electronic health records, ensuring confidentiality, integrity, and authenticity of data.",
-        "solution": "Developed a custom cryptographic library for encrypting EHRs, set up a virtual network with firewalls and secure TLS/SSL communications using Vagrant and Virtualbox, and implemented digital signatures for authenticity. Used a mix of symmetric and asymmetric cryptography to protect data and secure key exchange.",
+        "solution": "Designed and implemented a secure network for managing electronic health records, ensuring the confidentiality, integrity, and authenticity of patient data. Implemented a secure server-client architecture using C++ and C#/.NET, with MySQL for data storage. Utilized firewalls, authentication mechanisms, and cryptography to protect data in transit and at rest. Implemented digital signatures for data integrity and authenticity, as well as an authentication server handling access, ensuring that patient data is not tampered with and that only authorized users can access it. \n\nThe system is designed to be scalable and secure, with a focus on protecting patient data and ensuring that only authorized users can access it. It also supports an emergency override option available to physicians, but will be alerted to the patient if used. The use of digital signatures and encryption ensures that patient data is protected from unauthorized access and tampering, while the use of firewalls and authentication mechanisms helps to prevent unauthorized access to the system. The system is designed to be user-friendly and accessible, and users interact with it through a simple CLI",
         "time": "Winter 2023/2024",
         "images": [
             "network_infrastructure.webp",
@@ -90,8 +90,8 @@
             "Ansible",
             "Vagrant"
         ],
-        "task": "Deploy a resilient and scalable To-Do List web application using an infrastructure-as-code approach with Terraform, Ansible, and Vagrant.",
-        "solution": "Implemented core operations using Express.js microservices for adding/removing and checking/unchecking items, a React frontend, and a MongoDB database replica set for persistent storage. Set up and managed the infrastructure on Google Cloud Platform using Terraform for IaC and Ansible for configuration management, ensuring consistent environments across development and production. Integrated Prometheus and Grafana for monitoring system health and performance.",
+        "task": "Create a scalable microservice-based to-do list application with infrastructure managed through Infrastructure as Code (IaC) and robust monitoring.",
+        "solution": "Designed and implemented a microservice-based to-do list application using Express.js for the backend and Svelte for the frontend. The project focused on managing IT infrastructures through Infrastructure as Code (IaC). Deployment to Google Cloud Platform (GCP) was automated using Terraform, Ansible, and Vagrant, ensuring a scalable and efficient deployment process. We used a MongoDB database replica set for persistent storage, providing reliability and redundancy, and a Grafana dashboard for monitoring system health and performance. The services implemented include adding/removing and checking/unchecking items on the to-do list, providing a simple to-do list application as the main focus was on the management and deployment of the network infrastructure. ",
         "time": "Fall 2023",
         "images": [
             "iac_webpage.webp",
@@ -106,17 +106,17 @@
         "link": "https://github.com/tildeeine/iac_microservice_todolist"
     },
     {
-        "title": "Hike Trondheim to Oslo, 1 month",
+        "title": "Solo hike 1 month from Trondheim to Oslo",
         "type": "personal",
-        "description": "Implementing and testing the IBFT protocol for a high-dependability blockchain implementation in Java",
+        "description": "A month-long solo hike from Trondheim to Oslo, pushing my limits in planning, perseverance, and problem-solving.",
         "coverImage": "hike_smile.webp",
         "languages": [
-            "HTML",
-            "CSS",
-            "JavaScript"
+            "Planning",
+            "Persistence",
+            "Problem solving"
         ],
-        "task": "Task description here",
-        "solution": "Solution description here",
+        "task": "Planned and executed a solo hike, managed food and supplies, overcame physical and logistical challenges.",
+        "solution": "I took on a month-long solo hike from Trondheim to Oslo right after my first year of studies. This adventure was all about pushing my limits, both physically and mentally.\n\nI started planning in October and set off as soon as summer break began in June. I spent months preparing, testing my gear, and training to carry a heavy backpack. I did injury prevention exercises and got all the necessary equipment, like a burner and maps. I planned all my food in advance and sent it to myself as depots along the way. My backpack weighed between 15kg to 30kg, depending on access to water and how far it was between depots.  \n\nI handled everything from setting up camp daily to navigating with sometimes outdated maps. I faced challenges like Achilles tendonitis in the first week, a malfunctioning burner in the middle of the mountains the second week, and all sorts of weather. I learned to deal with unexpected issues creatively, and the experience boosted my skills in planning, persistence, and problem-solving.\n\nOverall, it was a beautiful and challenging experience, and I'm already looking forward to my next big hike.",
         "time": "Summer 2021",
         "images": [
             "hike_food.webp",
