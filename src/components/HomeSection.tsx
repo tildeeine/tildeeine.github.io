@@ -5,7 +5,7 @@ import profileImage from '../assets/img/frontphoto.webp';
 const HomeSection: React.FC = () => {
     return (
         <section id="home" className="font-poppins mt-5 p-8 mx-auto">
-            <div className="flex flex-col lg:flex-row items-center justify-between w-4/5 mx-auto">
+            <div className="flex flex-col lg:flex-row items-center justify-between w-full md:w-4/5 mx-auto">
                 <div className="flex lg:hidden justify-center lg:justify-end mt-8 lg:mt-0 lg:w-1/3">
                     <Image src={profileImage} alt="Tilde Eriksen Eine" className="w-3/4 lg:w-full rounded-full" />
                 </div>

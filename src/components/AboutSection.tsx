@@ -9,10 +9,10 @@ const AboutSection: React.FC = () => {
                 <h2>Who am I?</h2>
             </div>
             <div className="flex justify-center">
-                <Image src={profileImage} alt="Tilde Eriksen Eine" className="mt-3 w-4/5 rounded-3xl" />
+                <Image src={profileImage} alt="Tilde Eriksen Eine" className="mt-3 w-full md:w-4/5 rounded-3xl" />
             </div>
             <div className="flex justify-center items-center mt-10">
-                <div className="w-4/5 text-center text-lg font-poppins text-secondary">
+                <div className="w-full md:w-4/5 text-center text-lg font-poppins text-secondary">
                     <div className="mb-6">
                         <p>Hi there! I&apos;m a master&apos;s student at NTNU Trondheim, graduating in <b>June 2025</b> with a degree in <b>Cybersecurity and Data Communications</b>, specializing in Information Security. I&apos;ve had an interest in technology since secondary school and enjoy learning new technologies and testing my problem-solving skills.</p>
                     </div>

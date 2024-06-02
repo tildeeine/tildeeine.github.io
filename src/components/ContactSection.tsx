@@ -18,7 +18,7 @@ const ContactSection: React.FC = () => {
 
     return (
         <section id="contact" className="w-full mt-30">
-            <div className="w-4/5 mx-auto">
+            <div className="w-full md:w-4/5 mx-auto">
                 <div className="mt-40 w-4/5">
                     <p className="text-4xl font-poppins text-primary text-left">
                         Have an opportunity, some feedback, or an interesting idea to share?

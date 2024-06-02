@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useMediaQuery } from 'react-responsive';
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
-import ToggleButtons from "../ToggleButtons";
+import ToggleButtons from "./ToggleButtons";
 import projectsData from "../../assets/projects/projects.json";
 
 interface Project {
@@ -54,12 +54,12 @@ const ProjectSection: React.FC = () => {
 
     return (
         <section id='projects'>
-            <div className="mt-20 py-10 w-4/5 mx-auto">
+            <div className="mt-20 py-10 w-full md:w-4/5 mx-auto">
                 <h1 className="text-4xl font-poppins text-primary text-left">
                     Projects
                 </h1>
             </div>
-            <div className="w-4/5 mx-auto">
+            <div className="w-full md:w-4/5 mx-auto">
                 <ToggleButtons
                     selectedCategory={selectedCategory}
                     setSelectedCategory={handleCategoryChange}
