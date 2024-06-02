@@ -19,9 +19,9 @@
             "block_blockchain.webp"
         ],
         "image_description": [
-            "To-Do List Application",
-            "Metrics Dashboard",
-            "Inventory Management"
+            "Quorum size used to handle Byzantine faults",
+            "CLI for Client Transactions",
+            "Illustration of block structure in blockchain"
         ],
         "link": "https://github.com/tildeeine/highly_dependable_blockchain"
     },
@@ -47,9 +47,9 @@
             "ambint_modal.webp"
         ],
         "image_description": [
-            "To-Do List Application",
-            "Metrics Dashboard",
-            "Inventory Management"
+            "Deployment diagram of security system",
+            "The dashboard for monitoring home appliances, with door alert active",
+            "The modal for more detailed information and control of the system"
         ],
         "link": "https://github.com/tildeeine/ambient_home_security"
     },
@@ -73,9 +73,9 @@
             "network_doctor_data.webp"
         ],
         "image_description": [
-            "To-Do List Application",
-            "Metrics Dashboard",
-            "Inventory Management"
+            "Diagram overview of network infrastructure",
+            "Patient data encryption on the server",
+            "Doctor accessing patient data with digital signature"
         ],
         "link": "https://github.com/tildeeine/secure_network_for_health_records"
     },
@@ -99,9 +99,9 @@
             "iac_inventory.webp"
         ],
         "image_description": [
-            "To-Do List Application",
-            "Metrics Dashboard",
-            "Inventory Management"
+            "Dashboard showing the to-do list application",
+            "Metrics dashboard for monitoring system health in Grafana",
+            "Ansible configurations"
         ],
         "link": "https://github.com/tildeeine/iac_microservice_todolist"
     },
@@ -124,9 +124,9 @@
             "hike_tent.webp"
         ],
         "image_description": [
-            "To-Do List Application",
-            "Metrics Dashboard",
-            "Inventory Management"
+            "Pre-hike food and depot preparation",
+            "Eating on the trail",
+            "One of many tent setups and campsites"
         ],
         "link": "https://www.budstikka.no/tilde-20-reiser-hjem-fra-trondheim-til-fots/s/5-55-1085043"
     }
