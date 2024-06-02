@@ -51,7 +51,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ images, descriptions, currentIn
                 <button className="absolute left-4 top-1/2 transform -translate-y-1/2 text-secondary" onClick={onPrev}>
                     &#10094;
                 </button>
-                <div className="flex justify-center items-center w-4/5 p-4">
+                <div className="flex justify-center items-center w-4/5 lg:w-1/2 p-4">
                     <Image
                         src={require(`../../assets/img/${images[currentIndex]}`).default}
                         alt={`Image ${currentIndex + 1}`}

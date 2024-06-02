@@ -99,7 +99,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                             <p className="whitespace-pre-line pb-4">{project.solution}</p>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-between md:justify-start lg:justify-between lg:items-end w-full md:w-1/3 mt-4">
+                    <div className="flex flex-col justify-between md:justify-start lg:justify-between lg:items-center w-full md:w-1/3 mt-4">
                         {project.images.map((image, index) => (
                             <div key={index} className="p-1 flex flex-wrap justify-center md:justify-end lg:justify-center w-full cursor-pointer" onClick={() => handleImageClick(index)}>
                                 <Image
