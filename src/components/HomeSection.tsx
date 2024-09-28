@@ -10,10 +10,22 @@ const HomeSection: React.FC = () => {
                     <Image src={profileImage} alt="Tilde Eriksen Eine" className="w-3/4 lg:w-full rounded-full" />
                 </div>
                 <div className="flex-1 lg:w-2/3 text-center lg:text-left">
-                    <h1 className="text-5xl lg:text-6xl mt-8 mb-4 text-primary">Hello, I&apos;m Tilde! </h1>
-                    <p className="text-sm lg:text-base mb-8 text-secondary">
-                        I&apos;m a <b>cybersecurity</b> student interested in <b>pentesting</b> and <b>software development</b>, currently in my fifth and last year of a M.Sc in Cybersecurity and Data Communication at NTNU.
-                    </p>
+                    <h1 className="text-5xl lg:text-6xl mt-8 mb-4 text-primary">Tilde Eriksen Eine </h1>
+                    <ul className="text-sm lg:text-base mb-8 ml-2 text-secondary">
+                        <li>
+                            5th year student, M.Sc. Cybersecurity and Data Communications @ NTNU Trondheim.
+                        </li>
+                        <li>
+                            Member of Ascend NTNU, Control group.
+                        </li>
+                        <li>
+                            Internships at Mnemonic and Visma.
+                        </li>
+                        <li>
+                            Student teaching assistant.
+                        </li>
+
+                    </ul>
                     <div className="flex flex-wrap justify-center">
                         <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-background py-2 px-4 border border-primary hover:border-transparent rounded mt-2 mx-2">
                             <a href="https://github.com/tildeeine" target="_blank" rel="noopener noreferrer">GitHub</a>
