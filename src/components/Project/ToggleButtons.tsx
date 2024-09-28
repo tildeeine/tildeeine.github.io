@@ -21,7 +21,7 @@ const ToggleButtons: React.FC<ToggleButtonsProps> = ({ selectedCategory, setSele
                     className={`font-bold py-2 px-4 rounded-l-lg w-1/2 ${selectedCategory === "technical" ? "text-background" : "text-primary"
                         }`}
                 >
-                    Technical
+                    Courses
                 </button>
                 <button
                     onClick={() => setSelectedCategory("personal")}
