@@ -129,5 +129,30 @@
             "One of many tent setups and campsites"
         ],
         "link": "https://www.budstikka.no/tilde-20-reiser-hjem-fra-trondheim-til-fots/s/5-55-1085043"
+    },
+    {
+        "title": "Control engineer for Ascend NTNU",
+        "type": "personal",
+        "description": "Member of the technical student organization Ascend NTNU, working on control systems for drones towards the IARC 10 competition.",
+        "coverImage": "ascend_cover.jpg",
+        "languages": [
+            "Teamwork",
+            "Data communications",
+            "Low-level programming"
+        ],
+        "task": "Member of the technical student organization Ascend NTNU, working on control systems for drones towards the IARC 10 competition.",
+        "solution": "I am part of Ascend NTNU, a technical student organization that designs and builds drones for the International Aerial Robotics Competition (IARC). I will work on the control systems for the drones, focusing on data communications and low-level programming. \n\nThrough my year on this team, I will learn a lot about teamwork, control systems, drones, and low-level programming. I will also get to work on a real-world project and see how the theory I learn in class applies to real-world problems. \n\n I am very excited to see what we can achieve as a team and to learn new things along the way.",
+        "time": "2024/2025",
+        "images": [
+            "ascend_drone.jpg",
+            "ascend_drone_again.jpeg",
+            "ascend_logo.png"
+        ],
+        "image_description": [
+            "Drone from the IARC 9 competition",
+            "Fenrir, from IARC 9",
+            "The Ascend logo"
+        ],
+        "link": "https://www.ascendntnu.no/"
     }
 ]
