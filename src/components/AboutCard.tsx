@@ -13,14 +13,15 @@ const AboutCard: React.FC<AboutCardProps> = ({ title, text, image, reverse = fal
     return (
         <div className={`flex flex-col md:flex-row items-center justify-between my-8 bg-background p-6 rounded-lg font-poppins ${reverse ? 'md:flex-row-reverse' : ''}`}>
             <div className="md:w-3/5 md:pr-6">
-                <h2 className="text-2xl font-bold text-primary mb-4">{title}</h2>
-                <p className="text-lg text-secondary leading-relaxed">{text}</p>
+                <h2 className="text-xl md:text-2xl font-bold text-primary mb-4">{title}</h2>
+                <p className="text-base md:text-lg text-secondary leading-relaxed">{text}</p>
             </div>
             <div className="flex justify-start w-full md:w-1/3 mt-6 md:mt-0">
                 <Image
                     src={image}
                     alt={title}
-                    className="object-cover rounded-lg"
+                    className="object-cover rounded-lg w-full h-auto"
+                    layout="resopnsive"
                 />
             </div>
         </div>

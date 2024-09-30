@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image';
-import profileImage from '../assets/img/frontphoto.webp';
+import profileImage from '../assets/img/cvfoto.jpg';
 
 const HomeSection: React.FC = () => {
     return (
@@ -11,22 +11,10 @@ const HomeSection: React.FC = () => {
                     <Image src={profileImage} alt="Tilde Eriksen Eine" className="w-3/4 lg:w-full rounded-full" />
                 </div>
                 <div className="flex-1 lg:w-2/3 text-center lg:text-left">
-                    <h1 className="text-5xl lg:text-6xl mt-8 mb-4 text-primary">Tilde Eriksen Eine </h1>
-                    <ul className="text-sm lg:text-base mb-8 ml-6 text-secondary list-disc">
-                        <li>
-                            5th year student, <b>M.Sc. Cybersecurity and Data Communications</b> @ NTNU Trondheim.
-                        </li>
-                        <li>
-                            Internships at <b>Mnemonic</b> and <b>Visma</b>.
-                        </li>
-                        <li>
-                            Working on drone communication system for <b>Ascend NTNU</b>.
-                        </li>
-                        <li>
-                            Student teaching assistant.
-                        </li>
-
-                    </ul>
+                    <h1 className="text-3xl md:text-5xl lg:text-6xl mt-8 mb-4 text-primary">Tilde Eriksen Eine </h1>
+                    <div className="text-base lg:text-lg mb-8 ml-2 text-secondary list-disc">
+                        <p> Student M.Sc. Cybersecurity and Data Communications at NTNU Trondheim, working on drone communication system for Ascend NTNU.</p>
+                    </div>
                     <div className="flex flex-wrap justify-center">
                         <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-background py-2 px-4 border border-primary hover:border-transparent rounded mt-2 mx-2">
                             <a href="https://github.com/tildeeine" target="_blank" rel="noopener noreferrer">GitHub</a>
