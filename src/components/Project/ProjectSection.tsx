@@ -30,6 +30,7 @@ const ProjectSection: React.FC = () => {
 
     const filteredProjects = projectsData.filter(project => project.type === selectedCategory);
 
+
     const isLargeScreenQuery = useMediaQuery({ query: '(min-width: 1024px)' });
 
     useEffect(() => {
@@ -47,19 +48,17 @@ const ProjectSection: React.FC = () => {
             setTimeout(() => {
                 setSelectedCategory(category);
                 setIsTransitioning(false);
-            }, 300); // Adjust the timeout duration to match the animation duration
+            }, 300);
         }
     };
 
 
     return (
-        <section id='projects' className="w-full lg:w-4/5 mx-auto">
-            <div className="mt-20 py-6 sm:py-10 mx-auto">
-                <h1 className="text-4xl font-poppins text-primary justify-center text-left">
-                    Projects
-                </h1>
+        <section id='projects' className="w-full lg:w-4/5 mx-auto py-20 md:mt-20">
+            <div className="text-center mb-8">
+                <h1 className="text-4xl font-poppins text-primary">Projects</h1>
             </div>
-            <div className="mx-auto flex justify-center md:justify-start flex-wrap">
+            <div className="mx-auto flex justify-center  flex-wrap">
                 <ToggleButtons
                     selectedCategory={selectedCategory}
                     setSelectedCategory={handleCategoryChange}
