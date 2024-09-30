@@ -53,13 +53,13 @@ const ProjectSection: React.FC = () => {
 
 
     return (
-        <section id='projects'>
-            <div className="mt-20 py-10 w-full md:w-4/5 mx-auto">
-                <h1 className="text-4xl font-poppins text-primary text-left">
+        <section id='projects' className="w-full lg:w-4/5 mx-auto">
+            <div className="mt-20 py-6 sm:py-10 mx-auto">
+                <h1 className="text-4xl font-poppins text-primary justify-center text-left">
                     Projects
                 </h1>
             </div>
-            <div className="w-full md:w-4/5 mx-auto">
+            <div className="mx-auto flex justify-center md:justify-start flex-wrap">
                 <ToggleButtons
                     selectedCategory={selectedCategory}
                     setSelectedCategory={handleCategoryChange}
