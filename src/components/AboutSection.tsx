@@ -22,19 +22,18 @@ const AboutSection: React.FC = () => {
                 />
                 <AboutCard
                     title="Work Experience"
-                    text="Last summer I worked as a summer intern at Mnemonic. Here I conducted penetration tests on two different web applications, and got a practical approach to cybersecurity in applications. The summer before I had an internship at Visma, where I worked as a software developer, and learned a lot about working in a team and developing software in a professional environment with github and agile methodologies.
-                    Througout my studies I have also held a part-time job as a student assistant at NTNU, where I have helped students with their assignments in the courses I have taken. These courses include object oriented programming, security and robustness in ICT systems, digital economics, and experts in teamwork."
-                    image={require(`../assets/img/iac_webpage.webp`).default}
+                    text="I have had internships at Mnemonic and Visma, and I have worked as a student teaching assistant for three years. Through these experiences I have learned a lot about cybersecurity, penetration test, development, teamwork, and conveying technical information. I am currently a member of Ascend NTNU, where I am working on a drone control system in a cross-disciplinary team."
+                    image={require(`../assets/img/visma-group.jpg`).default}
                 />
                 <AboutCard
                     title="Volunteer Experience"
-                    text="I've worked on various projects in network security, software development, and threat analysis..."
+                    text="I have been a volunteer at the student organization Abakus at NTNU, where I have been a part of the company committee and organized company-related events for students. The biggest event I have been a part of is BedEx, our yearly trip to Oslo with 90 students visiting 9 companies in 3 days. I have also been a part of the organization of my class' third-year excursion, where I was responsible for booking transport and hotels for 50 students."
                     image={require(`../assets/img/iac_webpage.webp`).default}
                     reverse
                 />
                 <AboutCard
                     title="Interests"
-                    text="I've worked on various projects in network security, software development, and threat analysis..."
+                    text="Outside of my studies I enjoy hiking, marital arts, running, and reading. I also participate in CTFs from time to time, and tinker with some personal projects like this website."
                     image={require(`../assets/img/iac_webpage.webp`).default}
                 />
             </div>
