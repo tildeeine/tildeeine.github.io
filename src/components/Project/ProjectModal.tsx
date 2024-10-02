@@ -69,12 +69,12 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
             <div className={`fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-30 ${isOpen ? 'block' : 'hidden'}`}>
                 <div
                     ref={modalRef}
-                    className={`modal-container bg-background p-5 rounded-lg w-11/12 md:w-3/4  xl:w-1/2 h-5/6 max-h-screen overflow-y-auto font-poppins flex flex-col md:flex-row transform transition-all duration-500 ${isOpen ? 'animate-slide-up' : 'animate-slide-down'}`}
+                    className={`modal-container bg-background p-5 rounded-lg w-10/12 h-5/6 max-h-screen overflow-y-auto font-poppins flex flex-col md:flex-row transform transition-all duration-500 ${isOpen ? 'animate-slide-up' : 'animate-slide-down'} md:max-w-[750px] lg:max-w-[750px] xl:max-w-[1200px] xl:max-h-[750px]`}
                 >
                     <div className="p-4 space-y-4 w-full md:w-2/3">
                         <div className="flex justify-between items-start">
-                            <h2 className="text-3xl font-bold text-secondary flex-grow">{project.title}</h2>
-                            <div className="text-secondary rounded-full text-md ml-4 flex-shrink-0 mt-1">
+                            <h2 className="text-2xl md:text-3xl font-bold text-secondary flex-grow">{project.title}</h2>
+                            <div className="text-secondary rounded-full text-sm md:text-base ml-2 md:ml-4 flex-shrink-0 mt-1">
                                 <p>{project.time}</p>
                             </div>
                         </div>
@@ -86,16 +86,16 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                                     </li>
                                 ))}
                             </ul>
-                            <div className="ml-auto text-background bg-primary hover:bg-primary-dark rounded-full px-3 py-1 mb-2 w-1/4">
+                            <div className="ml-auto text-background bg-primary hover:bg-primary-dark rounded-full md:px-3 py-1 mb-2 md:w-1/4">
                                 <a href={project.link} target="_blank" rel="noopener noreferrer">See project</a>
                             </div>
                         </div>
-                        <div className="text-secondary text-sm mb-4">
-                            <h3 className="text-md font-semibold">Task</h3>
+                        <div className="text-secondary text-sm md:text-base 2xl:text-lg mb-4">
+                            <h3 className="text-md font-semibold pt-3">Task</h3>
                             <p className="whitespace-pre-line">{project.task}</p>
                         </div>
-                        <div className="text-secondary text-sm mb-4">
-                            <h3 className="text-md font-semibold">Solution</h3>
+                        <div className="text-secondary text-sm md:text-base 2xl:text-lg mb-4">
+                            <h3 className="text-md font-semibold">Description</h3>
                             <p className="whitespace-pre-line pb-4">{project.solution}</p>
                         </div>
                     </div>

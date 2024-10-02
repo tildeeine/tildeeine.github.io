@@ -30,7 +30,8 @@ const ProjectSection: React.FC = () => {
 
     const filteredProjects = projectsData.filter(project => project.type === selectedCategory);
 
-    const isLargeScreenQuery = useMediaQuery({ query: '(min-width: 1024px)' });
+
+    const isLargeScreenQuery = useMediaQuery({ query: '(min-width: 1024px) ' })
 
     useEffect(() => {
         setIsLargeScreen(isLargeScreenQuery);
@@ -47,25 +48,25 @@ const ProjectSection: React.FC = () => {
             setTimeout(() => {
                 setSelectedCategory(category);
                 setIsTransitioning(false);
-            }, 300); // Adjust the timeout duration to match the animation duration
+            }, 300);
         }
     };
 
 
     return (
-        <section id='projects'>
-            <div className="mt-20 py-10 w-full md:w-4/5 mx-auto">
-                <h1 className="text-4xl font-poppins text-primary text-left">
-                    Projects
-                </h1>
+        <section id='projects' className="w-full lg:w-4/5 xl:w-3/4 mx-auto py-20 md:mt-20">
+            <div className="text-center mb-8">
+                <h1 className="text-4xl font-poppins text-primary">Projects</h1>
             </div>
-            <div className="w-full md:w-4/5 mx-auto">
+
+            <div className="mx-auto flex justify-center flex-wrap">
                 <ToggleButtons
                     selectedCategory={selectedCategory}
                     setSelectedCategory={handleCategoryChange}
                 />
             </div>
-            <div className={`flex flex-wrap justify-center transition-opacity duration-500 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
+
+            <div className={`flex flex-wrap justify-center gap-6 transition-opacity duration-500 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
                 {filteredProjects.map((project: Project, index: number) => {
                     const card = (
                         <ProjectCard
