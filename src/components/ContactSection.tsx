@@ -20,7 +20,7 @@ const ContactSection: React.FC = () => {
         <section id="contact" className="w-full mt-30">
             <div className="mx-auto">
                 <div className="mt-40 justify-center items-center">
-                    <p className="text-2xl md:text-4xl font-poppins text-primary txt-center">
+                    <p className="text-2xl md:text-4xl font-poppins text-primary text-center">
                         Have an opportunity, some feedback, or want to know more?
                     </p>
                     <p className="text-2xl md:text-4xl mt-2 font-poppins text-primary text-center">

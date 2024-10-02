@@ -23,7 +23,7 @@ const AboutSection: React.FC = () => {
                 <AboutCard
                     title="Work Experience"
                     text="I have had internships at Mnemonic and Visma, and I have worked as a student teaching assistant for three years. Through these experiences I have learned a lot about cybersecurity, penetration test, development, teamwork, and conveying technical information. I am currently a member of Ascend NTNU, where I am working on a drone control system in a cross-disciplinary team."
-                    image={require(`../assets/img/visma-group.jpg`).default}
+                    image={require(`../assets/img/minternship.jpg`).default}
                 />
                 <AboutCard
                     title="Volunteer Experience"

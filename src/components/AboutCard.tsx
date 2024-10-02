@@ -20,8 +20,10 @@ const AboutCard: React.FC<AboutCardProps> = ({ title, text, image, reverse = fal
                 <Image
                     src={image}
                     alt={title}
-                    className="object-cover rounded-lg w-full h-auto"
-                    layout="resopnsive"
+                    className="object-cover rounded-lg"
+                    layout="intrinsic"
+                    width={400}
+                    height={300}
                 />
             </div>
         </div>
