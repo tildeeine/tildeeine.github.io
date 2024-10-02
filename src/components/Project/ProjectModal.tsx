@@ -69,7 +69,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
             <div className={`fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-30 ${isOpen ? 'block' : 'hidden'}`}>
                 <div
                     ref={modalRef}
-                    className={`modal-container bg-background p-5 rounded-lg w-10/12 h-5/6 max-h-screen overflow-y-auto font-poppins flex flex-col md:flex-row transform transition-all duration-500 ${isOpen ? 'animate-slide-up' : 'animate-slide-down'} md:max-w-[750px] lg:max-w-[750px] xl:max-w-[1200px] xl:max-h-[750px]`} // Adjusted widths
+                    className={`modal-container bg-background p-5 rounded-lg w-10/12 h-5/6 max-h-screen overflow-y-auto font-poppins flex flex-col md:flex-row transform transition-all duration-500 ${isOpen ? 'animate-slide-up' : 'animate-slide-down'} md:max-w-[750px] lg:max-w-[750px] xl:max-w-[1200px] xl:max-h-[750px]`}
                 >
                     <div className="p-4 space-y-4 w-full md:w-2/3">
                         <div className="flex justify-between items-start">

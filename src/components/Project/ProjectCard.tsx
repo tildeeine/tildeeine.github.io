@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, on
                 {/* Text Section */}
                 <div className="flex-1 p-4 md:p-6 flex flex-col justify-between">
                     <h2 className="text-lg md:text-xl text-secondary font-semibold">{title}</h2>
-                    <p className="text-secondary mt-2">{description}</p>
+                    <p className="text-secondary lg:text-lg mt-2">{description}</p>
                     <button onClick={onReadMore} className="inline-block mt-4 px-3 py-2 xl:w-1/2 border border-primary text-primary rounded hover:bg-primary hover:text-background transition-all">
                         More details
                     </button>
