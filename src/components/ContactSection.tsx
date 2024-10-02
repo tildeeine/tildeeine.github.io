@@ -8,7 +8,7 @@ const ContactSection: React.FC = () => {
     // Function to copy email to clipboard
     const copyEmailToClipboard = async () => {
         try {
-            await navigator.clipboard.writeText('tilde.eine@gmail.com');
+            await navigator.clipboard.writeText('tildeeine@proton.me');
             setCopied(true);
             setTimeout(() => setCopied(false), 2000); // Message disappears after 2 seconds
         } catch (err) {
@@ -18,16 +18,16 @@ const ContactSection: React.FC = () => {
 
     return (
         <section id="contact" className="w-full mt-30">
-            <div className="w-full md:w-4/5 mx-auto">
-                <div className="mt-40 w-4/5">
-                    <p className="text-4xl font-poppins text-primary text-left">
-                        Have an opportunity, some feedback, or an interesting idea to share?
+            <div className="mx-auto">
+                <div className="mt-40 justify-center items-center">
+                    <p className="text-2xl md:text-4xl font-poppins text-primary text-center">
+                        Have an opportunity, some feedback, or want to know more?
                     </p>
-                    <p className="text-4xl mt-2 font-poppins text-primary text-left">
+                    <p className="text-2xl md:text-4xl mt-2 font-poppins text-primary text-center">
                         Get in touch!
                     </p>
                 </div>
-                <div className="flex flex-wrap items-start font-poppins mt-5">
+                <div className="flex flex-wrap items-start justify-center font-poppins mt-5">
 
                     <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-background py-2 px-4 border border-primary hover:border-transparent rounded mt-3 mr-4 text-left">
                         <a href="https://www.linkedin.com/in/tildeeine/" target="_blank" rel="noopener noreferrer">LinkedIn</a>

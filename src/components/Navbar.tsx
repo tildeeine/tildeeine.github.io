@@ -53,8 +53,8 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className={`fixed top-0 left-0 right-0 z-20 bg-background transition-transform duration-300 ${isNavbarVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-            <div className="container mx-auto flex justify-between items-center py-4 text-lg">
-                <p className="text-primary hover:underline text-primary ml-2" onClick={scrollToTop}>
+            <div className="mx-auto flex justify-between items-center sm:text-sm md:text-xl py-4 px-2 md:px-8 w-full"> {/* Added px-8 for horizontal padding */}
+                <p className="text-primary hover:underline ml-2 mr-4" onClick={scrollToTop}>
                     Tilde Eriksen Eine
                 </p>
                 <ul className="flex text-secondary">
@@ -72,6 +72,7 @@ const Navbar: React.FC = () => {
             </div>
         </nav>
     );
+
 };
 
 export default Navbar;
