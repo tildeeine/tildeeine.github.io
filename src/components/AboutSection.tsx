@@ -5,10 +5,10 @@ import AboutCard from "./AboutCard";
 const AboutSection: React.FC = () => {
     return (
         <section className="w-full mx-auto" id='about-me'>
-            <div className="flex justify-center mt-40 mb-4 text-3xl md:text-4xl font-poppins text-primary">
+            <div className="flex justify-center text-center mt-40 mb-4 text-3xl md:text-4xl font-poppins text-primary">
                 <h2>About Me</h2>
             </div>
-            <div className="bg-background min-h-screen p-8">
+            <div className="bg-background min-h-screen md:p-8">
                 <AboutCard
                     title="Who am I?"
                     text="I'm a 24 year old cybersecurity student from Lommedalen, currently studying at NTNU in Trondheim. "
