@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar: React.FC = () => {
     const [isNavbarVisible, setIsNavbarVisible] = useState(true);
     const [isNavbarClick, setIsNavbarClick] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -49,6 +51,12 @@ const Navbar: React.FC = () => {
             });
             setIsNavbarClick(true);
         }
+        setIsMobileMenuOpen(false);
+    };
+
+    // Toggle mobile menu
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen((prev) => !prev);
     };
 
     return (
@@ -57,8 +65,20 @@ const Navbar: React.FC = () => {
                 <p className="text-primary hover:underline ml-2 mr-4" onClick={scrollToTop}>
                     Tilde Eriksen Eine
                 </p>
-                <ul className="flex text-secondary">
-                    {['Projects', 'About me', 'Contact'].map((item) => (
+                {/* Hamburger Icon for Mobile */}
+                <div className="sm:hidden">
+                    <button onClick={toggleMobileMenu}>
+                        {isMobileMenuOpen ? (
+                            <FaTimes className="text-primary text-2xl" /> // Close icon
+                        ) : (
+                            <FaBars className="text-primary text-2xl" /> // Hamburger icon
+                        )}
+                    </button>
+                </div>
+
+                {/* Full Menu for larger screens */}
+                <ul className="hidden sm:flex text-secondary">
+                    {['Skills', 'Experience', 'Projects', 'About me', 'Contact'].map((item) => (
                         <li key={item} className="mr-6">
                             <a
                                 className="text-primary hover:underline"
@@ -69,6 +89,27 @@ const Navbar: React.FC = () => {
                         </li>
                     ))}
                 </ul>
+
+                {/* Mobile Menu Dropdown */}
+                {isMobileMenuOpen && (
+                    <ul
+                        className={`flex flex-col items-center absolute top-14 left-0 right-0 bg-background shadow-lg py-4 sm:hidden z-10  ${isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
+                            }`}
+                    >
+                        {['Skills', 'Experience', 'Projects', 'About me', 'Contact'].map((item) => (
+                            <li key={item} className="py-2">
+                                <a
+                                    className="text-primary hover:underline"
+                                    onClick={() => scrollToSection(item.toLowerCase().replace(' ', '-'))}
+                                >
+                                    {item}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                )}
+
+
             </div>
         </nav>
     );

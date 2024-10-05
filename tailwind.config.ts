@@ -23,6 +23,7 @@ const config: Config = {
         'primary': '#F55200',
         'primary-dark': '#E65005',
         'secondary': '#1F526B',
+        'secondary-light': '#53758a',
         'background': '#FAF1E6',
         'highlighted': '#F5E6CA',
         'selected': '#F6EBDD'

@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
                 Created with Next.js and tailwindcss.
             </p>
             <p className="text-secondary font-poppins">
-                © 2024 Tilde Eriksen Eine. All rights reserved.
+                © 2024 Tilde Eriksen Eine.
             </p>
         </footer>
     );
