@@ -4,7 +4,7 @@ import SkillCategory from "./SkillCategory";
 
 const SkillsSection: React.FC = () => {
 
-    const devSkills = ["Python", "Java", "C++", "JavaScript", "TypeScript", "Next.js", "Tailwind CSS"];
+    const devSkills = ["Python", "Java", "C++", "JavaScript", "TypeScript", "Bash", "Next.js", "Tailwind CSS"];
     const securitySkills = ["BurpSuite", "Wireshark", "Kali Linux"];
     const otherSkills = ["Git", "GitHub", "jUnit", "flask", "Vagrant"];
 
