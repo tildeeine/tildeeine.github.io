@@ -54,7 +54,7 @@ const ProjectSection: React.FC = () => {
 
 
     return (
-        <section id='projects' className="w-full lg:w-4/5 xl:w-3/4 mx-auto py-20 mt-40">
+        <section id='projects' className="w-full lg:w-4/5 xl:w-3/4 mx-auto py-20 mt-20">
             <div className="text-center mb-8">
                 <h1 className="text-4xl font-poppins text-primary">Projects</h1>
             </div>
