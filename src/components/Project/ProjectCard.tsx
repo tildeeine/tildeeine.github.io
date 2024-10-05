@@ -12,8 +12,8 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, onReadMore, isImageLeft, isLargeScreen }) => {
     return (
-        <div className={`flex flex-col ${isLargeScreen ? (isImageLeft ? 'md:flex-row' : 'md:flex-row-reverse') : 'flex-col'} mx-auto mt-10 w-full max-w-[350px] md:max-w-[700px] xl:max-w-[900px] justify-center hover:bg-selected rounded-md`} onClick={onReadMore}>
-            <div className="flex flex-col md:flex-row rounded-lg overflow-hidden w-full max-w-[350px] md:max-w-[700px] xl:max-w-[900px]">
+        <div className={`flex flex-col ${isLargeScreen ? (isImageLeft ? 'md:flex-row' : 'md:flex-row-reverse') : 'flex-col'} mx-auto mt-10 w-full md:max-w-[700px] xl:max-w-[900px] justify-center hover:bg-selected rounded-md`} onClick={onReadMore}>
+            <div className="flex flex-col md:flex-row rounded-lg overflow-hidden w-full md:max-w-[700px] xl:max-w-[900px]">
                 {/* Left or Top Image Section */}
                 {(isImageLeft || !isLargeScreen) && (
                     <div className="flex-none w-full md:w-1/3 h-48 relative md:m-4">

@@ -8,6 +8,7 @@ import AboutSection from '../components/About/AboutSection';
 import ContactSection from '../components/Contact/ContactSection';
 import Footer from '@/components/Footer/Footer';
 import SkillsSection from '@/components/Skills/SkillsSection';
+import ExperienceSection from '@/components/Experience/ExperienceSection';
 
 const Page: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Page: React.FC = () => {
       <Navbar />
       <HomeSection />
       <SkillsSection />
+      <ExperienceSection />
       <ProjectSection />
       <AboutSection />
       <ContactSection />

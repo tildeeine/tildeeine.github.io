@@ -27,15 +27,15 @@ const ContactSection: React.FC = () => {
                         Get in touch!
                     </p>
                 </div>
-                <div className="flex flex-wrap items-start justify-center font-poppins mt-5">
+                <div className="flex flex-wrap items-center lg:items-start justify-center font-poppins mt-5">
 
-                    <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-background py-2 px-4 border border-primary hover:border-transparent rounded mt-3 mr-4 text-left">
+                    <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-background py-2 px-4 border border-primary hover:border-transparent rounded mt-3 md:mr-4 text-left">
                         <a href="https://www.linkedin.com/in/tildeeine/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </button>
-                    <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-background py-2 px-4 border border-primary hover:border-transparent rounded mr-4 mt-3 text-left">
+                    <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-background py-2 px-4 border border-primary hover:border-transparent rounded md:mr-4 mt-3 text-left">
                         <a href="https://github.com/tildeeine" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </button>
-                    <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-background py-2 px-4 border border-primary hover:border-transparent rounded mr-4 mt-3 text-left" onClick={copyEmailToClipboard}>
+                    <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-background py-2 px-4 border border-primary hover:border-transparent rounded md:mr-4 mt-3 text-left" onClick={copyEmailToClipboard}>
                         {copied ? <span>Copied to clipboard!</span> : "Email"}
                     </button>
                 </div>
