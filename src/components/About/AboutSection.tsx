@@ -4,8 +4,8 @@ import AboutCard from "./AboutCard";
 
 const AboutSection: React.FC = () => {
     return (
-        <section className="w-full mx-auto" id='about-me'>
-            <div className="flex justify-center text-center mt-40 mb-4 text-3xl md:text-4xl font-poppins text-primary">
+        <section className="w-full mx-auto mt-40" id='about-me'>
+            <div className="flex justify-center text-center text-3xl mb-4 md:mb-0 md:text-4xl font-poppins text-primary">
                 <h2>About Me</h2>
             </div>
             <div className="bg-background min-h-screen md:p-8">

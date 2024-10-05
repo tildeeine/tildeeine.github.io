@@ -10,7 +10,7 @@ interface AboutCardProps {
 
 const AboutCard: React.FC<AboutCardProps> = ({ title, text, image, reverse = false }) => {
     return (
-        <div className={`flex flex-col md:flex-row items-center justify-between md:my-8 bg-background md:p-6 rounded-lg font-poppins ${reverse ? 'md:flex-row-reverse' : ''} w-full max-w-[350px] md:max-w-[700px] xl:max-w-[900px] mx-auto`}>
+        <div className={`flex flex-col md:flex-row items-center justify-between md:my-8 bg-background md:p-6 text-center md:text-left rounded-lg font-poppins ${reverse ? 'md:flex-row-reverse' : ''} w-full max-w-[350px] md:max-w-[700px] xl:max-w-[900px] mx-auto`}>
 
             {/* Text Container */}
             <div className="md:w-3/5 md:pr-6 w-full">
