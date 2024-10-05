@@ -15,14 +15,14 @@ const ToggleButtons: React.FC<ToggleButtonsProps> = ({ selectedCategory, setSele
             <div className="border relative z-10 flex border-primary rounded-lg w-full">
                 <button
                     onClick={() => setSelectedCategory("technical")}
-                    className={`font-bold py-2 px-4 rounded-l-lg w-1/2 ${selectedCategory === "technical" ? "text-background" : "text-primary"
+                    className={`font-bold py-2 px-4 rounded-l-lg w-1/2 hover:bg-primary hover:text-background hover:rounded-r-lg ${selectedCategory === "technical" ? "text-background" : "text-primary"
                         }`}
                 >
                     Courses
                 </button>
                 <button
                     onClick={() => setSelectedCategory("personal")}
-                    className={`font-bold py-2 px-4 rounded-r-lg w-1/2 ${selectedCategory === "personal" ? "text-background" : "text-primary"
+                    className={`font-bold py-2 px-4 rounded-r-lg w-1/2 hover:bg-primary hover:text-background hover:rounded-l-lg ${selectedCategory === "personal" ? "text-background" : "text-primary"
                         }`}
                 >
                     Personal

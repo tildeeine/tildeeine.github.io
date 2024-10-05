@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image';
-import profileImage from '../assets/img/cvfoto.jpg';
+import profileImage from '../../assets/img/cvfoto.jpg';
 
 const HomeSection: React.FC = () => {
     return (
