@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, on
             <div className="flex flex-col md:flex-row rounded-lg overflow-hidden w-full max-w-[350px] md:max-w-[700px] xl:max-w-[900px]">
                 {/* Left or Top Image Section */}
                 {(isImageLeft || !isLargeScreen) && (
-                    <div className="flex-none w-full md:w-1/3 h-48 relative">
+                    <div className="flex-none w-full md:w-1/3 h-48 relative md:m-4">
                         <Image
                             src={image}
                             alt={title}
@@ -37,7 +37,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, on
                 </div>
                 {/* Reversed Image Section */}
                 {(!isImageLeft && isLargeScreen) && (
-                    <div className="flex-none w-full md:w-1/3 h-48 relative">
+                    <div className="flex-none w-full md:w-1/3 h-48 relative md:m-4">
                         <Image
                             src={image}
                             alt={title}
