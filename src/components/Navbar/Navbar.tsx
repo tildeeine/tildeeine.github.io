@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
                     Tilde Eriksen Eine
                 </p>
                 <ul className="flex text-secondary">
-                    {['Projects', 'About me', 'Contact'].map((item) => (
+                    {['Skills', 'Experience', 'Projects', 'About me', 'Contact'].map((item) => (
                         <li key={item} className="mr-6">
                             <a
                                 className="text-primary hover:underline"
