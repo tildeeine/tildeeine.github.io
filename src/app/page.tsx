@@ -1,18 +1,20 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 
-import Navbar from '../components/Navbar'
-import HomeSection from '../components/HomeSection';
+import Navbar from '../components/Navbar/Navbar'
+import HomeSection from '../components/Home/HomeSection';
 import ProjectSection from '../components/Project/ProjectSection';
-import AboutSection from '../components/AboutSection';
-import ContactSection from '../components/ContactSection';
-import Footer from '@/components/Footer';
+import AboutSection from '../components/About/AboutSection';
+import ContactSection from '../components/Contact/ContactSection';
+import Footer from '@/components/Footer/Footer';
+import SkillsSection from '@/components/Skills/SkillsSection';
 
 const Page: React.FC = () => {
   return (
     <main className="flex min-h-screen flex-col p-24 bg-background">
       <Navbar />
       <HomeSection />
+      <SkillsSection />
       <ProjectSection />
       <AboutSection />
       <ContactSection />
