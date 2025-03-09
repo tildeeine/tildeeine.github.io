@@ -15,8 +15,8 @@ const Page: React.FC = () => {
     <main className="flex min-h-screen flex-col p-24 bg-background">
       <Navbar />
       <HomeSection />
-      <SkillsSection />
-      <ExperienceSection />
+      {/* <SkillsSection />
+      <ExperienceSection /> */}
       <ProjectSection />
       <AboutSection />
       <ContactSection />

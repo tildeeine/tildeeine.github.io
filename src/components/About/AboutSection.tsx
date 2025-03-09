@@ -16,7 +16,7 @@ const AboutSection: React.FC = () => {
                 />
                 <AboutCard
                     title="Education"
-                    text="I am currently in my fourth year of a five year master's degree in cybersecurity at NTNU, with a specialzation of information security, and have taken courses in cybersecurity, networks, and software development. From 2023 to 2024 I was on exchange at Instituto Superior Tecnico in Lisbon, Portugal. Right now I am working on my master's thesis in the field of cyber threat intelligence and analysis."
+                    text="I am currently in my fifth and final year of a master's degree in cybersecurity and data communications at NTNU, with a specialzation in information security. I spent a year on exchange at Instituto Superior Tecnico in Lisbon, Portugal, and am currently writing a master's thesis in the field of malware analysis, developing visualizations to assist in analysis."
                     image={require(`../../assets/img/krets.jpg`).default}
                     reverse
                 />

@@ -1,6 +1,6 @@
 [
     {
-        "title": "Highly Dependable Blockchain",
+        "title": "Blockchain for a Secure Payment System",
         "type": "technical",
         "description": "Developed a secure blockchain using the IBFT consensus algorithm, tested it for validity and liveness, and improved functionality based on test results.",
         "coverImage": "block_maven.webp",
@@ -10,9 +10,9 @@
             "JUnit5",
             "Maven"
         ],
-        "task": "Implement a secure and dependable blockchain with the IBFT consensus algorithm to handle transactions securely, resist Byzantine faults, and maintain authenticity and integrity.",
-        "solution": "Continued work on an existing codebase to implement a secure blockchain based on the IBFT consensus algorithm. Developed tests using JUnit5 to ensure that the system was secure and dependable, and made changes to the implementation where I discovered vulnerabilities and errors.\n\nI was mainly responsible for the client-side CLI and transaction processing. During testing I came up with simulated attacks, and implemented protection against them. These attacks included replay attacks, double spending, and Byzantine node collaboration. I also implemented digital signature-based authentication to ensure message integrity and authenticity. \n\nWe managed to achieve almost full functionality of the system, with a realistic execution of blocks and with depenability guarantees for validity and liveness, as well as protection against Byzantine behavior.",
-        "time": "Spring 2024",
+        "task": "Project done as part of a course on highly dependable systems, where we learned about blockchains. For the course evaluation we had to continue work on an existing codebase to make a basic implementation of blockchains into a secure and highly available one. In addition to developing the application, we had to write tests to prove the liveness, validity, and security features of the system. \n\nWe worked in groups of three, where I was mainly responsible for the client side of the transactions as well as testing. During testing I wrote code to simulate different attacks, such as replay, double spending and Byzantine node collaboration attacks. I also implemented digital signature-based authenticaiton to ensure integrity and authenticity of all messages in the system. \n\n In the end, we were able to achieve almost all requested functionality, and received an 18/20 grade, equivalent to an A.",
+        "solution": "placeholder",
+        "time": "2024",
         "images": [
             "block_client.webp",
             "block_byzantine_quorum.webp",
@@ -35,12 +35,11 @@
             "MicroPython",
             "C++",
             "JavaScript",
-            "HTML",
-            "CSS"
+            "REACT"
         ],
-        "task": "Design any choice of ambient IoT-system using using RPis and Arduinos. We chose to make a prototype of a system meant to assist at-risk individuals in living independently by monitoring potentially hazardous home appliances.",
-        "solution": "My group wanted to do a project that could allow at-risk individuals to stay at home for longer instead of moving to a care home, by monitoring potentially hazardous home appliances using Raspberry Pi, Arduino, and Nicla Vision. \n\nThe system features a web interface created with React, which offers real-time status updates like current temperature readings and time since door was last opened, as well as real-time photos from the Nicla Vision camera component. The frontend communicates with our RPis using Flask. If there are potentially dangerous readings on any of the monitored components, the web dashboard gives the option to implement a killswitch. In our prototype we implemented a simple PoC for an oven killswitch, which allows the user to remotely turn off the oven. This feature can be used by the resident of the house, or by caretakers who would also have access to the platform to monitor the resident's safety. \n\nThe system is designed to be user-friendly and accessible, and uses WiFi to communicate with the IoT-devices running python and C++.",
-        "time": "Spring 2024",
+        "task": "For a course on ambient intelligence, we got to choose a project related to the course topics of IoT and system automation. My group of three chose to make a home automation system focused on safety features for at-risk individuals, like elders or disabled people, living alone. The goal of the system was to allow these individuals to live at home longer instead of moving to a care home. \n\nOur system monitors potentially hazardous ome appliances using Raspberry Pi, Arduino and Nicla Vision. For the prototype, we created a web dashboard using React for frontend and flask to communicate with APIs hosted at the RPIs. The system offers information about the current oven temperature and when the door was last opened, as well as surveillance images from the Nicla Vision. \n\nThe prototype is very simple, but it was fun to handle the challenge of communicating with multiple components and tinkering with the hardware necessary to get the heat and door sensors, and the Nicla Vision camera to work. We use WiFi to communicate with IoT-devices running python and C++ code.",
+        "solution": "Placeholder",
+        "time": "2024",
         "images": [
             "ambint_diagram.webp",
             "ambint_dashboard.webp",
@@ -54,9 +53,9 @@
         "link": "https://github.com/tildeeine/ambient_home_security"
     },
     {
-        "title": "Secure Network for Health Records",
+        "title": "Secure Exchange of Electronic Health Records",
         "type": "technical",
-        "description": "Built an application for secure exchange of health records, and implemented security measures in the network which stores and provides these records using firewalls, authentication, and cryptography.",
+        "description": "Built an application to allow for secure exchange of sensitive patient health records, and set up a secure network to store and exchange these records using firewalls, authentication, and encryption.",
         "coverImage": "network_infrastructure.webp",
         "languages": [
             "C++",
@@ -64,9 +63,9 @@
             "MySQL",
             "Vagrant"
         ],
-        "task": "Create a secure system for managing electronic health records, ensuring confidentiality, integrity, and authenticity of data.",
-        "solution": "We designed and implemented a secure network for managing electronic health records in a way that ensured confidentiality, integrity and authenticity of patient data. My group developed a server-client application for requesting, encrypting, and verifying the integrity of the health data. The application also handled digital signatures for data integrity and for authenticity, by communicating with a PoC authentication server which handled verification of digital sigantures of doctors and patients. \n\n We used a MySQL server for data storage. We implemented the network with a DMZ and a secure internal network by configuring a firewall. \n\nThe system is designed to be scalable and secure, with a focus on protecting patient data and ensuring that only authorized users can access it. It also supports an emergency override option in case of medical emergencies where the doctors need to access a patients health records quickly. If used, this will alert the patient of the doctors identifity. Digital signatures and encryption ensures that patient data is protected from unauthorized access and tampering, while firewalls and authentication mechanisms help to prevent unauthorized access to the system. The system is designed to be user-friendly and accessible, and users interact with it through a simple CLI.",
-        "time": "Winter 2023/2024",
+        "task": "For a course on software and network security we had to find a way to safely exchange sensitive patient electronic health records (EHRs) in a healthcare environment. We focused on creating a system that provided confidentiality, integrity and authenticity for the patient data, through digital signatures, encryption, and firewalls. \n\nThis was a fun project where I got to learn a lot about implementing several components of a system, from client and server side applications, to database management, firewall setups and authentication servers. \n\nTogether with one other student, I developed a client-server application for requesting, encrypting and verifying the integrity of data, and authentication of user roles using digital signatures. We also implemented a network with a DMZ and separate secure internal network, and used Vagrant to set up the endpoints and firewalls. The system also supports an emergency override option in case of emdical emergencies, with alerts and logging upon use.",
+        "solution": "Placeholder",
+        "time": "2023/2024",
         "images": [
             "network_infrastructure.webp",
             "network_server_encryption.webp",
@@ -80,22 +79,20 @@
         "link": "https://github.com/tildeeine/secure_network_for_health_records"
     },
     {
-        "title": "IaC To-Do List Application",
+        "title": "Infrastructure-as-Code for Microservices",
         "type": "technical",
-        "description": "Got familiar with Infrastructure-as-Code tools by building and deploying a simple microservice-based To-Do List application using Terraform, Ansible, and Vagrant in Google Cloud Platform.",
+        "description": "Learned Infrastructure-as-Code tools and concepts through building and deploying a simple microservice-based To-Do List application using Terraform, Ansible, and Vagrant, and deploying to Google Cloud Platform.",
         "coverImage": "iac_architecture.webp",
         "languages": [
             "JavaScript",
             "Terraform",
             "Ansible",
             "Vagrant",
-            "GCP",
-            "Grafana",
-            "Prometheus"
+            "GCP"
         ],
-        "task": "Create a scalable microservice-based to-do list application with infrastructure managed through Infrastructure as Code (IaC) and robust monitoring.",
-        "solution": "Designed and implemented a microservice-based to-do list application using Express.js for the backend and Svelte for the frontend. The project focused on managing IT infrastructures through Infrastructure as Code (IaC). \n\nWe automated deployment to Google Cloud Platform (GCP) using Terraform, Ansible, and Vagrant, to ensure a scalable and efficient deployment process. We used a MongoDB database replica set for persistent storage, to provide reliability and redundancy, and a Grafana dashboard for monitoring system health and performance. \n\nThe To-Do List itself is simple, and supports microservices for adding/removing and checking/unchecking items on the to-do list. The main focus of the project was on the management and deployment of the network infrastructure. ",
-        "time": "Fall 2023",
+        "task": "For this project my group of three developed, provisioned and deployed a microservice-based to-do list application. The project focused on teaching the concepts and technologies used in Infrastructure-as-Code (IaC) projects. \n\nWe used Express.js for the backend and Svelte for the frontend, and deployed to Google Cloud Platform using the Terrform, Ansible and Vagrant to ensure scalable and efficient deployment, through automation and load balancing. We used MongoDB for persistent storage, and set up Grafana and Prometheus dashboards for monitoring system health and performance. \n\nThe to-do list is very simple, as the focus of the project was the deployment, management and automation of the necessary network infrastructure.",
+        "solution": "Placeholder",
+        "time": "2023",
         "images": [
             "iac_webpage.webp",
             "iac_metrics.webp",
@@ -118,8 +115,8 @@
             "Data communications",
             "Low-level programming"
         ],
-        "task": "Member of the technical student organization Ascend NTNU, working on control systems for drones towards the IARC 10 competition.",
-        "solution": "I am part of Ascend NTNU, a technical student organization that designs and builds drones for the International Aerial Robotics Competition (IARC). I will work on the control systems for the drones, focusing on data communications and low-level programming. \n\nThrough my year on this team, I will learn a lot about teamwork, control systems, drones, and low-level programming. I will also get to work on a real-world project and see how the theory I learn in class applies to real-world problems. \n\n I am very excited to see what we can achieve as a team and to learn new things along the way.",
+        "task": "As a member of the technical student organization Ascend NTNU, I work on control systems for our four drones towards the IARC 10 competition. Ascend is a technical student organization that designs and builds drones for international aerial robotics competitions. The tasks here are more low-level and hardware oriented than the rest of my courses, and I get to work with real-world problems and solutions. \n\n I am mainly responsible for the data communications, with everything from selecting which components and technologies to use, to installing and testing them with the drones. I also contribute on other parts of the project when needed, such as C++ and python programming for the drones, and precise positioning.",
+        "solution": "Placeholder",
         "time": "2024/2025",
         "images": [
             "ascend_drone.jpg",
@@ -131,21 +128,21 @@
             "Fenrir, from IARC 9",
             "The Ascend logo"
         ],
-        "link": "https://www.ascendntnu.no/"
+        "link": "https://www.ascendntnu.no/teams/team-2025"
     },
     {
-        "title": "Solo hike 1 month from Trondheim to Oslo",
+        "title": "600 km Solo Hike from Trondheim to Oslo",
         "type": "personal",
-        "description": "A month-long solo hike from Trondheim to Oslo, pushing my limits in planning, perseverance, and problem-solving.",
+        "description": "A personal challenge and long-term personal goal which pushed my limits in planning, perseverance, and problem-solving.",
         "coverImage": "hike_smile.webp",
         "languages": [
             "Planning",
-            "Persistence",
+            "Perserverance",
             "Problem solving"
         ],
-        "task": "Planned and executed a solo hike, managed food and supplies, overcame physical and logistical challenges.",
-        "solution": "In fall of 2020 I decided that I wanted to walk from Trondheim to Oslo in the upcoming summer vacation, right after my first year of studies. My main motivation for this was to challenge myself and see if I could manage to complete an expedition like this on my own. I started training and planning for the hike in October, since there were a lot of logistics related to food, supplies and gear for a trup this long. \n\nThe months leading up to the hike, and especially the exam period in June 2021, were used to test my gear on smaller hikes and training to carry a heavier backpack. I started hiking in the beginning of June, and spent 32 days to complete the hikes, including rest days. I planned all my food in advance and organized it into depots. Some I sent to myself to pick up at post offices along the way, and some I gave to friends and family who helped me with resuppling. \n\n My backpack weighed between 16kg and 32kg, depending on how much food and water I had to carry based on access to water and time until the next resupply. I hiked solo most of the time, with some visits from my father during weekends. I had to handle everything from everyday tasks like setting up camp and making food, to navigation using sometimes outdated maps, injuries, and gear failures. Some of the issues I faced include Achilles tendonitis in the first week, a malfunctioning burner in the middle of the mountains the second week, and all sorts of weather. I learned to deal with unexpected issues creatively, and the experience boosted my skills in planning, persistence, and problem-solving.",
-        "time": "Summer 2021",
+        "task": "During corona and my first semester of university in 2020 I decided to attempt my goal og completing a solo thru hike, inspired by YouTube videos of PCT hikers in the US. My main motivation was to challenge myself and go outside my comfort sone in terms of distance, backpack weight, and confidence. \n\nI began training and planning already in October of 2020, and followed a structured plan to slowly work up to the weight of the backpack and the daily distance. I also had to manage logistics around food, water, supplies and gear for the full distance, as well as navigation and route planning. The months leading up to the hike were used to test my gear on smaller hikes and training. \n\nI started the hike right after the exam period in June, and spent 32 days on the trail, including 5 rest days. I planned all food in advance, and sent it to myself to pick up at post offices along the way. My backpack weight was up to 35 kg at the heaviest when it was long between resupplies and access to water. I hiked solo and had to tackle all challenges that arose on my own, including daily tasks, navigation, as well as injuries, gear failures, and weather conditions. I learned a lot about planning, persistence, and problem-solving, and the experience was a great confidence boost.",
+        "solution": "Placeholder",
+        "time": "2021",
         "images": [
             "hike_food.webp",
             "hike_eat.webp",

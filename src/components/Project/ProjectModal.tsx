@@ -2,18 +2,19 @@ import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import ImageModal from './ImageModal';
 
+interface Project {
+    title: string;
+    description: string;
+    languages: string[];
+    task: string;
+    images: string[];
+    time: string;
+    link: string;
+    image_description: string[];
+}
+
 interface ProjectModalProps {
-    project: {
-        title: string;
-        description: string;
-        languages: string[];
-        task: string;
-        solution: string;
-        images: string[];
-        time: string;
-        link: string;
-        image_description: string[];
-    };
+    project: Project;
     isOpen: boolean;
     onClose: () => void;
 }
@@ -66,11 +67,18 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
 
     return (
         <>
-            <div className={`fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-30 ${isOpen ? 'block' : 'hidden'}`}>
+            {isOpen && (
                 <div
-                    ref={modalRef}
-                    className={`modal-container bg-background p-5 rounded-lg w-10/12 h-5/6 max-h-screen overflow-y-auto font-poppins flex flex-col md:flex-row transform transition-all duration-500 ${isOpen ? 'animate-slide-up' : 'animate-slide-down'} md:max-w-[750px] lg:max-w-[750px] xl:max-w-[1200px] xl:max-h-[750px]`}
+                    className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+                    role="dialog"
+                    aria-hidden={!isOpen}
                 >
+                    <div
+                        ref={modalRef}
+                        className="modal-container bg-background p-5 rounded-lg w-10/12 h-5/6 max-h-screen overflow-y-auto font-poppins flex flex-col md:flex-row transform transition-all duration-500 ${isOpen ? 'animate-slide-up' : 'animate-slide-down'} md:max-w-[750px] lg:max-w-[750px] xl:max-w-[1200px] xl:max-h-[750px]"
+                    >
+                        
+                    {/* Left Section: Project Details */}
                     <div className="p-4 space-y-4 w-full md:w-2/3">
                         <div className="flex justify-between items-start">
                             <h2 className="text-2xl md:text-3xl font-bold text-secondary flex-grow">{project.title}</h2>
@@ -78,6 +86,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                                 <p>{project.time}</p>
                             </div>
                         </div>
+
+                        {/* Programming Languages and github link*/}
                         <div className="text-primary mb-4 flex items-center text-center text-sm">
                             <ul className="flex flex-wrap w-3/4 pointer-events-none">
                                 {project.languages.map(lang => (
@@ -90,23 +100,27 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                                 <a href={project.link} target="_blank" rel="noopener noreferrer">See project</a>
                             </div>
                         </div>
+
+                        {/* Task & Solution */}
                         <div className="text-secondary text-sm md:text-base 2xl:text-lg mb-4">
                             <h3 className="text-md font-semibold pt-3">Task</h3>
                             <p className="whitespace-pre-line">{project.task}</p>
                         </div>
-                        <div className="text-secondary text-sm md:text-base 2xl:text-lg mb-4">
-                            <h3 className="text-md font-semibold">Description</h3>
-                            <p className="whitespace-pre-line pb-4">{project.solution}</p>
-                        </div>
                     </div>
+
+                    {/* Right Section: Images */}
                     <div className="flex flex-col justify-between items-center lg:items-center w-full md:w-1/3 mt-4">
                         {project.images.map((image, index) => (
-                            <div key={index} className="p-1 flex flex-wrap justify-center md:justify-end lg:justify-center w-full cursor-pointer" onClick={() => handleImageClick(index)}>
+                            <div 
+                                key={index} 
+                                className="p-1 flex flex-wrap justify-center md:justify-end lg:justify-center w-full cursor-pointer" 
+                                onClick={() => handleImageClick(index)}
+                            >
                                 <Image
                                     src={require(`../../assets/img/${image}`).default}
                                     alt={project.title}
                                     className="object-cover h-32 lg:h-40 xl:h-48 rounded-lg"
-                                    loading="eager"
+                                    loading="lazy"
                                 />
                                 <p className="text-xs text-left text-secondary mb-2 mt-1">
                                     {project.image_description[index]}
@@ -116,6 +130,9 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                     </div>
                 </div>
             </div>
+            )}
+
+            {/* Image Modal */}
             {isImageModalOpen && (
                 <ImageModal
                     images={project.images}

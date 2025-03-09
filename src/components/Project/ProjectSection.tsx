@@ -74,6 +74,7 @@ const ProjectSection: React.FC = () => {
                             image={require(`../../assets/img/${project.coverImage}`).default}
                             title={project.title}
                             description={project.description}
+                            languages={project.languages}
                             onReadMore={() => openModal(project)}
                             isImageLeft={isImageLeft}
                             isLargeScreen={isLargeScreen}
