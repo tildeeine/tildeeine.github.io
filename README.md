@@ -1,18 +1,6 @@
 # Personal Homepage
 
-This is a personal homepage project created to practice web development and showcase both technical and personal projects. It serves as a portfolio to display the work I've done throughout my years at university, as well as other creative endeavors.
-
-## Description
-
-The purpose of this project is to:
-
-- Practice web development using modern technologies.
-- Create a personal homepage to share a bit about myself.
-- Showcase both technical and personal projects that I'm proud of.
-- Use GitHub more effectively and practice version control.
-- Motivate myself to work on and polish projects by having a platform to display them.
-
-This page is mostly for myself. I don't expect anyone to actually check out the page, but it's a fun and motivating way to keep track of my personal development and the projects I am proud of. It allows me to see my own growth and accomplishments over time. If anyone else happens to see it, that's a bonus!
+This is a personal homepage project created to practice web development and showcase both technical and personal projects. It serves as a portfolio to display the work I've done throughout my years at university, as well as other projects.
 
 ## Tech Stack
 
