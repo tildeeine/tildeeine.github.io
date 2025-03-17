@@ -19,9 +19,6 @@ const HomeSection: React.FC = () => {
                         <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-background py-2 px-4 border border-primary hover:border-transparent rounded mt-2 mx-2">
                             <a href="https://github.com/tildeeine" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </button>
-                        <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-background py-2 px-4 border border-primary hover:border-transparent rounded mt-2 mx-2">
-                            <a href="/cv/CV_Tilde_Eriksen_Eine_eng.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                        </button>
                         <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-background py-2 px-4 border border-primary hover:border-transparent rounded mt-2 mx-2 lg:mr-10">
                             <a href="https://www.linkedin.com/in/tildeeine/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </button>
